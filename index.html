@@ -3,20 +3,27 @@
 <head>
     <meta charset="utf-8">
     <title>支付宝UED首页</title>
+    <link rel="stylesheet" href="static/sea-modules/alice/base/1.0.1/base.css" type="text/css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="static/style.css" type="text/css" media="screen" charset="utf-8">
     <link rel="shortcut icon" href="https://img.alipay.com/common/favicon/favicon.ico" type="image/x-icon" />
-    <script src="static/sea-modules/seajs/2.0.0/sea.js"></script>
+    <script src="static/sea-modules/seajs/seajs/2.0.0/sea.js"></script>
     <script>
     seajs.config({
         alias: {
-            '$': '$'
+            '$': 'jquery/jquery/1.7.2/jquery'
         }
     });
     </script>
     <script src="static/script.js"></script>    
 </head>
 <body>
-    
+    <div class="wrapper fn-clear">
+        <div class="frame" id="frame-index">首页</div>
+        <div class="frame" id="frame-top">上</div>
+        <div class="frame" id="frame-bottom">下</div>
+        <div class="frame" id="frame-left">左</div>
+        <div class="frame" id="frame-right">右</div>
+    </div>
 </body>
 </html>
 
