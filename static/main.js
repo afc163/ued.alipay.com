@@ -1,7 +1,4 @@
-define(function(require) {
-    var $ = require('$');
-    var buzz = require('buzz');
-    var KeyboardJS = require('keyboard');
+seajs.use(['$', 'buzz', 'keyboard'], function($, buzz, KeyboardJS) { 
 
     /**
      * 音乐播放
