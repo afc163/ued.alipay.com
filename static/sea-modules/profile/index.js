@@ -9,11 +9,13 @@ define(function(require, exports, module) {
     exports.initBalls = function(type) {
         var balls = []
         for (var i=0; i<data[type].length; i++) {
-            var inter = setTimeout(function() {
-                var ball = new Ball(data[type][i])
-                balls.push()
-            }, random(500, 3000))
-            initShowInters.push(inter)
+            (function(config) {
+                var inter = setTimeout(function() {
+                    var ball = new Ball(config)
+                    balls.push(ball)
+                }, random(500, 3000))
+                initShowInters.push(inter)
+            })(data[type][i]);
         }
 
         var randomShow = function() {
@@ -38,7 +40,7 @@ define(function(require, exports, module) {
         }
         initShowInters = []
         clearTimeout(randomShowInter)
-        $('.ball').remove()
+        $('.ball').emove()
     }
 
     function random(from, to) {

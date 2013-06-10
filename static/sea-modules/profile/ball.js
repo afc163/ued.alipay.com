@@ -85,7 +85,9 @@ define(function(require, exports, module) {
         this.element.addClass('ball-hover')
         this.stop()
         
+        console.log(this.config.name)
         var html = Handlebars.compile(popTpl)(this.config)
+        console.log(html)
         this.pop = $(html).appendTo('body')
         this.pop.addClass('bubble-show');
 
