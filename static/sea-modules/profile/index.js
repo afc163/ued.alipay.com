@@ -11,7 +11,7 @@ define(function(require, exports, module) {
             setTimeout(function() {
                 var ball = new Ball(data[type][i])
                 balls.push()
-            }, random(500, 2500))
+            }, random(500, 3000))
         }
 
         var randomShow = function() {
