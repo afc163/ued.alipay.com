@@ -29,7 +29,7 @@ define(function(require) {
             setTimeout(function() {
                 $("#loading").hide();
             }, 500)
-        }, 2000);
+        }, 1000);
     });
 
 });
