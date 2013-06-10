@@ -2,6 +2,9 @@ body {
     overflow: hidden;
 }
 
+/*
+ * 页面布局样式
+ */
 .wrapper {
     font-size: 16px;
 }
@@ -9,6 +12,8 @@ body {
 .frame {
     text-align:center;
     position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 #frame-top {
@@ -32,6 +37,8 @@ body {
     top: 0;
     left: 100%;
 }
+
+/* 每一页样式 */
 
 /* profile style */
 body {
