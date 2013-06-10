@@ -113,6 +113,8 @@ body {
     top: -100%;
     left: 0;
     background: #92ddfd;
+    background: url(images/bg1.jpg) no-repeat 0 0;
+    background-size: cover;
     color: #fff;
 }
 #frame-top.action {
@@ -123,6 +125,8 @@ body {
     top: 100%;
     left: 0;
     background: #fed5d3;
+     background: url(images/bg4.jpg) no-repeat 0 0;
+    background-size: cover;
 }
 #frame-bottom.action {
     top: 0;
@@ -132,14 +136,19 @@ body {
     top: 0;
     left: -100%;
     background: #bfe8a8;
+     background: url(images/bg2.jpg) no-repeat 0 0;
+    background-size: cover;
 }
 #frame-left.action {
     left: 0;
+    z-index: 100;
 }
 #frame-right {
     top: 0;
     left: 100%;
     background: #faf0ba;
+     background: url(images/bg3.jpg) no-repeat 0 0;
+    background-size: cover;
 }
 #frame-right.action {
     left: 0;
@@ -226,6 +235,25 @@ body {
     color: #fff;
     float: left;
 }
+
+.page .intro {
+    width: 450px;
+    height: auto;
+    position: absolute;
+        color: #fff;
+
+}
+.page .intro-det {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px 15px;
+    text-align: left;
+    font-size: 14px;
+}
+.page .intro-det p {
+    text-indent: 2em;
+    margin-bottom: 1em;
+}
+
 .page .goto {
     width: 100px;
     height: 100px;
@@ -240,12 +268,22 @@ body {
 .page .goto:hover {
     background: rgba(0, 0, 0, 0.5);
 }
+
+
 #frame-top .header {
     bottom: 50px;
     right: 50px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     border-right: 1px solid rgba(255, 255, 255, 0.4);
 }
+#frame-top .intro {
+    border-top: 1px solid  rgba(255, 255, 255, 0.4);
+    border-right: 1px solid  rgba(255, 255, 255, 0.4);
+    padding: 25px 25px 0 0;
+    bottom: 50px;
+    left: 50px;
+}
+
 #frame-top .goto {
     bottom: -50px;
     left: 50%;
@@ -259,6 +297,13 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.4);
     border-left: 1px solid rgba(255, 255, 255, 0.4);
 }
+#frame-bottom .intro {
+    border-left: 1px solid  rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.4);
+    padding: 0 0 25px 25px;
+    top: 50px;
+    right: 50px;
+}
 #frame-bottom .goto {
     top: -50px;
     left: 50%;
@@ -269,6 +314,13 @@ body {
     right: 50px;
     border-top: 1px solid rgba(255, 255, 255, 0.4);
     border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+#frame-left .intro {
+    border-top: 1px solid  rgba(255, 255, 255, 0.4);
+    border-left: 1px solid  rgba(255, 255, 255, 0.4);
+    padding: 25px 0 0 25px;
+    bottom: 50px;
+    right: 50px;
 }
 #frame-left .goto {
     top: 50%;
@@ -282,6 +334,13 @@ body {
     bottom: 50px;
     border-left: 1px solid rgba(255, 255, 255, 0.4);
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+#frame-right .intro {
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.4);
+    border-right: 1px solid  rgba(255, 255, 255, 0.4);
+    padding: 0 25px 25px 0;
+    top: 50px;
+    left: 50px;
 }
 #frame-right .goto {
     top: 50%;
