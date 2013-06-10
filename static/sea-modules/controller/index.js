@@ -2,11 +2,28 @@ define(function(require) {
     var $ = require('$');
     var buzz = require('buzz');
     var KeyboardJS = require('keyboard');
-    var introSound = new buzz.sound( "static/media/intro", {
+
+    /**
+     * 音乐播放
+     */
+    var bassSound = new buzz.sound( "static/media/bass1", {
+        formats: [ "ogg", "mp3"]
+    }),
+    hatSound = new buzz.sound( "static/media/hat1", {
+        formats: [ "ogg", "mp3"]
+    }),
+    snareSound = new buzz.sound( "static/media/snare1", {
+        formats: [ "ogg", "mp3"]
+    }),
+    tomSound = new buzz.sound( "static/media/tom1", {
+        formats: [ "ogg", "mp3"]
+    }), introSound = new buzz.sound( "static/media/intro", {
         formats: [ "ogg", "mp3"]
     });
 
-
+    /**
+     * 操作事件
+     */
     var win = $(window);
 
     var setSize = function() {
@@ -27,6 +44,24 @@ define(function(require) {
         $(".frame").removeClass("action");
         $(toggleId).addClass("action");
         $("#frame-index").attr("class", toggleClass);
+        //播放声音
+        var currentId = $(this).attr("id");
+        switch(currentId) {
+            case "a":
+                bassSound.play();
+                break;
+            case "s":
+                hatSound.play();
+                break;
+            case "d":
+                snareSound.play();
+                break;
+            case "f":
+                tomSound.play();
+                break;
+            default:
+                break;
+        }
     });
 
     $(document).ready(function() {
@@ -39,21 +74,7 @@ define(function(require) {
         }, 1000);
     });
 
-    /**
-     * 音乐播放
-     */
-    var bassSound = new buzz.sound( "static/media/bass1", {
-        formats: [ "ogg", "mp3"]
-    }),
-    hatSound = new buzz.sound( "static/media/hat1", {
-        formats: [ "ogg", "mp3"]
-    }),
-    snareSound = new buzz.sound( "static/media/snare1", {
-        formats: [ "ogg", "mp3"]
-    }),
-    tomSound = new buzz.sound( "static/media/tom1", {
-        formats: [ "ogg", "mp3"]
-    })
+
 
     /**
      * 键盘 a, s, d, f
