@@ -174,7 +174,32 @@ body {
     height: 100%;
     text-indent: -9999em;
     overflow: hidden;
+    -webkit-transition: all .1s cubic-bezier(.8, 0, 1, .8) 0s;
+	   -moz-transition: all .1s cubic-bezier(.8, 0, 1, .8) 0s;
+		 -o-transition: all .1s cubic-bezier(.8, 0, 1, .8) 0s;
+			transition: all .1s cubic-bezier(.8, 0, 1, .8) 0s;
 }
+.index li .action {
+    border-radius: 100px 100px;
+}
+.index .keymap {
+    width: 40%;
+    margin: 0 auto;
+}
+.index .keymap span {
+    display: block;
+    float: left;
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    line-height: 48px;
+    margin: 0 15px;
+    border: 1px solid #dedede;
+    border-radius: 4px 4px;
+    text-align: center;
+    vertical-align: middle;
+}
+
 .page {
     padding: 0px 50px;
     position: relative;
