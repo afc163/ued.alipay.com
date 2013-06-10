@@ -8,7 +8,10 @@ define(function(require, exports, module) {
     exports.initBalls = function(type) {
         var balls = []
         for (var i=0; i<data[type].length; i++) {
-            balls.push(new Ball(data[type][i]))
+            setTimeout(function() {
+                var ball = new Ball(data[type][i])
+                balls.push()
+            }, random(500, 2500))
         }
 
         var randomShow = function() {

@@ -47,9 +47,7 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index'],
             Profile.clearBalls();
         } else {
             var type = $(this).data('key');
-            setTimeout(function() {
-                Profile.initBalls(type);
-            }, 1000);
+            Profile.initBalls(type);
         }
 
         //播放声音
