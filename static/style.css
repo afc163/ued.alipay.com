@@ -367,8 +367,8 @@ a.ball {
     transition: opacity 2s ease-out;
 }
 
-.ball:hover,
-.ball-hover {
+a.ball:hover,
+a.ball-hover {
     text-indent: 0;
     opacity: 1!important;
 }
