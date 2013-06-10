@@ -137,8 +137,8 @@ define(function(require, exports, module) {
         origin = parseInt(origin, 10)
         if (origin + increment < 30) {
             return 30-origin
-        } else if (origin + increment + 80 > max) {
-            return max - origin - 80
+        } else if (origin + increment + 100 > max) {
+            return max - origin - 100
         } else {
             return increment
         }
