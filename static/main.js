@@ -1,4 +1,5 @@
-seajs.use(['$', 'buzz', 'keyboard'], function($, buzz, KeyboardJS) { 
+seajs.use(['$', 'buzz', 'keyboard', 'profile/index'],
+    function($, buzz, KeyboardJS, Profile) { 
 
     /**
      * 音乐播放
@@ -41,6 +42,15 @@ seajs.use(['$', 'buzz', 'keyboard'], function($, buzz, KeyboardJS) {
         $(".frame").removeClass("action");
         $(toggleId).addClass("action");
         $("#frame-index").attr("class", toggleClass);
+
+        //初始化泡泡
+        if (toggleId === '#frame-index') {
+            Profile.clearBalls();
+        } else {
+            var type = $(this).data('key');
+            Profile.initBalls(type);
+        }
+
         //播放声音
         var currentId = $(this).attr("id");
         switch(currentId) {
