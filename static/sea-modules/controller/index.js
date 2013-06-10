@@ -1,6 +1,11 @@
 define(function(require) {
     var $ = require('$');
     var buzz = require('buzz');
+    var KeyboardJS = require('keyboard');
+    var introSound = new buzz.sound( "static/media/intro", {
+        formats: [ "ogg", "mp3"]
+    });
+
 
     var win = $(window);
 
@@ -27,10 +32,62 @@ define(function(require) {
     $(document).ready(function() {
         setTimeout(function() {
             $("#loading").addClass("action");
+            introSound.play();
             setTimeout(function() {
                 $("#loading").hide();
             }, 500)
         }, 1000);
     });
-    console.log(buzz);
+
+    /**
+     * 音乐播放
+     */
+    var bassSound = new buzz.sound( "static/media/bass1", {
+        formats: [ "ogg", "mp3"]
+    }),
+    hatSound = new buzz.sound( "static/media/hat1", {
+        formats: [ "ogg", "mp3"]
+    }),
+    snareSound = new buzz.sound( "static/media/snare1", {
+        formats: [ "ogg", "mp3"]
+    }),
+    tomSound = new buzz.sound( "static/media/tom1", {
+        formats: [ "ogg", "mp3"]
+    })
+
+    /**
+     * 键盘 a, s, d, f
+     */
+    KeyboardJS.on("j", function() {
+        bassSound.play();
+        $("#a").addClass("action");
+    }, function() {
+        bassSound.stop();
+        $("#a").removeClass("action");
+    });
+
+    KeyboardJS.on("k", function() {
+        hatSound.play();
+        $("#s").addClass("action");
+    }, function() {
+        hatSound.stop();
+        $("#s").removeClass("action");
+    });
+
+    KeyboardJS.on("l", function() {
+        snareSound.play();
+        $("#d").addClass("action");
+    }, function() {
+        snareSound.stop();
+        $("#d").removeClass("action");
+    });
+
+    KeyboardJS.on("i", function() {
+        tomSound.play();
+        $("#f").addClass("action");
+    }, function() {
+        tomSound.stop();
+        $("#f").removeClass("action");
+    });
+
 });
