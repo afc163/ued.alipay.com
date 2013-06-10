@@ -14,7 +14,7 @@ define(function(require, exports, module) {
         var randomShow = function() {
             inter = setTimeout(function() {
                 if ($('.bubble').length === 0) {
-                    var b = balls[random(0, balls.length-1)];
+                    var b = balls[random(0, balls.length-1)]
                     b.showPop()
                     setTimeout(function() {
                         b.hidePop()
