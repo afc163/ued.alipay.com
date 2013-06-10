@@ -2,11 +2,13 @@ define(function(require, exports, module) {
 
     var $ = require('$')
     var Handlebars = require('handlebars')
+    var Position = require('position')
     require('easing')
     var popTpl = $('#pop-template').html()
 
     function ball(config) {
         config = config || {}
+        this.config = config;
         this.parentNode = $(config.parentNode || 'body')
         this.name = config.name || '花名'
         this.image = config.image
@@ -20,7 +22,7 @@ define(function(require, exports, module) {
 
     ball.prototype.init = function() {
         this.element = 
-            $('<div class="ball">' + this.name + '</div>').appendTo(this.parentNode)
+            $('<a target="_blank" href="'+this.url+'" class="ball">' + this.name + '</a>').appendTo(this.parentNode)
 
         // 随机位置
         var winWidth = $(window).width()
@@ -73,17 +75,53 @@ define(function(require, exports, module) {
     ball.prototype.bindHover = function() {
         var that = this
         this.element.hover(function() {
-            that.stop()
             that.showPop()
         }, function() {
-            that.start()
+            that.hidePop()
         })
     }
 
     ball.prototype.showPop = function() {
-        var html = Handlebars.compile(popTpl)({})
-        console.log(html)
-        $(html).appendTo('body')
+        this.element.addClass('ball-hover')
+        this.stop()
+        
+        var html = Handlebars.compile(popTpl)(this.config)
+        this.pop = $(html).appendTo('body')
+        this.pop.addClass('bubble-show');
+
+        // 计算球出现的位置
+        if (this.element.offset().top < this.pop.innerHeight() + 20) {
+            Position.pin({
+                element: this.pop,
+                x: '50%',
+                y: 0
+            }, {
+                element: this.element,
+                x: '50%',
+                y: '100% + 10'
+            })
+        } else {
+            Position.pin({
+                element: this.pop,
+                x: '50%',
+                y: '100%+30'
+            }, {
+                element: this.element,
+                x: '50%',
+                y: 0
+            })
+        }
+    }
+
+    ball.prototype.hidePop= function() {
+        var that = this
+        this.element.removeClass('ball-hover')    
+        if (this.pop) {
+            this.pop.fadeOut(500, function() {
+                that.pop.remove()
+            });
+        }
+        this.start()        
     }
 
     module.exports = ball

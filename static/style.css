@@ -1,6 +1,5 @@
 body {
     overflow: hidden;
-    font-family: "Hiragino Sans GB", sans-serif;
 }
 
 /*
@@ -263,11 +262,13 @@ body {
 }
 
 /* profile style */
-.ball {
+a.ball {
     width: 60px;
     height: 60px;
     position: absolute;
+    z-index: 101;
     color: #fff;
+    text-decoration:none;
     background: #f60;
     border-radius: 60px;
     text-align:center;
@@ -276,10 +277,11 @@ body {
     text-indent: -999px;
     overflow: hidden;
     opacity: 0;
-    transition: opacity 2s ease;
+    transition: opacity 2s ease-out;
 }
 
-.ball:hover {
+.ball:hover,
+.ball-hover {
     text-indent: 0;
     opacity: 1!important;
 }
@@ -288,13 +290,32 @@ body {
 
 .bubble {
     background: #fff;
-    border: 1px solid #5A8F00;
+    border: 1px solid #aaa;
     border-radius: 4px;
-    box-shadow: 0 0 3px 3px #333;
     color: #333333;
-    width: 300px;
+    width: 200px;
     margin: 1em 0 3em;
-    padding: 50px 15px;
+    padding: 10px;
     position: relative;
     text-align: center;
+    z-index: 102;
+    animation: scale 0.25s;
+    animation-timing-function: ease-out;
+}
+
+.bubble img {
+    height: 100px;
+    border-radius: 5px;
+    display: block;
+}
+
+@keyframes scale {
+    from {
+        opacity: 0;
+        transform: translate(0,70px) scale(0.2);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0,0) scale(1);
+    }
 }
