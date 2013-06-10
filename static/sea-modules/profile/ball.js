@@ -33,7 +33,7 @@ define(function(require, exports, module) {
         })
 
         // 随机大小
-        var r = random(40, 80)
+        var r = random(50, 100)
         this.element.css({
             width: r,
             height: r,
@@ -136,8 +136,8 @@ define(function(require, exports, module) {
 
     function limit(origin, increment, max) {
         origin = parseInt(origin, 10)
-        if (origin + increment < 0) {
-            return -origin
+        if (origin + increment < 30) {
+            return 30-origin
         } else if (origin + increment + 80 > max) {
             return max - origin - 80
         } else {
