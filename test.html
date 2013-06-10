@@ -9,10 +9,10 @@
     <script src="static/sea-modules/seajs/seajs/2.0.0/sea.js"></script>
     <script src="static/config.js"></script>
     <script>
-        seajs.use('profile/ball', function(Ball) {
-            new Ball().autoMove();
-            new Ball().autoMove();
-            new Ball().autoMove();
+        seajs.use(['profile/data', 'profile/ball'], function(data, Ball) {
+            for (var i=0; i<30; i++) {
+                new Ball(data.wd[1]);
+            }
         });
     </script>
 </head>

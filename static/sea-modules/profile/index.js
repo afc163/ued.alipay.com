@@ -1,9 +1,12 @@
 define(function(require) {
 
-    require('transit');
     var data = require('./data');
-    var canvas = require('./canvas');
+    var Ball = require('./ball');
 
-    canvas.init(data);
+    exports.init = function(type) {
+        for (var i=0; i<data[type].length; i++) {
+            new Ball(data[type][i]);
+        }
+    }
 
 });

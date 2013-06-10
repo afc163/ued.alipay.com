@@ -13,6 +13,7 @@ define(function(require, exports, module) {
 
         this.init()
         this.bindHover()
+        this.start()
     }
 
     ball.prototype.init = function() {
@@ -23,12 +24,12 @@ define(function(require, exports, module) {
         var winWidth = $(window).width()
         var winHeight = $(window).height()
         this.element.css({
-            top: random(winHeight/5, winHeight*4/5),
-            left: random(winHeight/5, winWidth*4/5)
+            top: random(winHeight/8, winHeight*7/8),
+            left: random(winHeight/8, winWidth*7/8)
         })
 
         // 随机大小
-        var r = random(50, 70)
+        var r = random(40, 80)
         this.element.css({
             width: r,
             height: r,
@@ -38,17 +39,17 @@ define(function(require, exports, module) {
 
         // 随机透明度
         this.element.css({
-            opacity: random(50, 70)/100
+            opacity: random(20, 50)/100
         })
 
     }
 
     ball.prototype.move = function(callback) {
-        var duration = random(8000, 15000)
+        var duration = random(6000, 15000)
 
         this.element.animate({
-            top: '+=' + random(-200, 200),
-            left: '+=' + random(-200, 200)
+            top: '+=' + limit(this.element.css('top'), random(-200, 200), $(window).height()),
+            left: '+=' + limit(this.element.css('left'), random(-200, 200), $(window).width())
         }, {
             duration: duration,
             easing: 'easeOut',
@@ -56,15 +57,11 @@ define(function(require, exports, module) {
         })
     }
 
-    ball.prototype.autoMove = function() {
+    ball.prototype.start = function() {
         var that = this
         this.move(function() {
-            that.autoMove()
+            that.start()
         }) 
-    }
-
-    ball.prototype.start = function() {
-        this.autoMove()
     }
 
     ball.prototype.stop = function() {
@@ -75,9 +72,14 @@ define(function(require, exports, module) {
         var that = this
         this.element.hover(function() {
             that.stop()
+            that.showPop()
         }, function() {
             that.start()
         })
+    }
+
+    ball.prototype.showPop = function() {
+        
     }
 
     module.exports = ball
@@ -88,6 +90,17 @@ define(function(require, exports, module) {
         from = from || 0
         to = to || 1
         return Math.floor(Math.random() * (to - from + 1) + from)
+    }
+
+    function limit(origin, increment, max) {
+        origin = parseInt(origin, 10);
+        if (origin + increment < 0) {
+            return -origin;
+        } else if (origin + increment + 80 > max) {
+            return max - origin - 80;
+        } else {
+            return increment;
+        }
     }
 
 })

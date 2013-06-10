@@ -121,7 +121,8 @@ body {
     border: 3px solid transparent;
     text-indent: -999px;
     overflow: hidden;
-    transition: opacity 1.5s ease;
+    opacity: 0;
+    transition: opacity 2s ease;
 }
 
 .ball:hover {
