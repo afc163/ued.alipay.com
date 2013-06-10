@@ -33,12 +33,12 @@ body {
 	   -moz-transition: all .5s cubic-bezier(.8, 0, 1, .8) 0s;
 		 -o-transition: all .5s cubic-bezier(.8, 0, 1, .8) 0s;
 			transition: all .5s cubic-bezier(.8, 0, 1, .8) 0s;
-    background: #0f6bad;
+    background: #fec8a0;
 }
 .loading .right {
     width: 50%;
     height: 100%;
-    background: #e3517d;
+    background: #fee6bc;
     top: 0;
     right: 0;
     opacity: 1;
@@ -152,7 +152,7 @@ body {
     position: relative;
 }
 .index .logo {
-    margin-top: 100px;
+    margin-top: 40px;
     line-height: 200px;
     font-size: 120px;
 }
@@ -180,11 +180,11 @@ body {
 		 -o-transition: all .1s cubic-bezier(.8, 0, 1, .8) 0s;
 			transition: all .1s cubic-bezier(.8, 0, 1, .8) 0s;
 }
-.index li .action {
+.index li a:hover, .index li .action {
     border-radius: 100px 100px;
 }
 .index .keymap {
-    width: 40%;
+    width: 330px;
     margin: 0 auto;
 }
 .index .keymap span {
@@ -199,6 +199,7 @@ body {
     border-radius: 4px 4px;
     text-align: center;
     vertical-align: middle;
+    color: #888;
 }
 
 .page {
