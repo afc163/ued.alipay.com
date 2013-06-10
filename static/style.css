@@ -303,7 +303,7 @@ a.ball {
     text-indent: -999px;
     overflow: hidden;
     opacity: 0;
-    transition: opacity 2s ease-out;
+    transition: opacity 1.5s ease-out;
 }
 
 .ball:hover,
@@ -325,8 +325,8 @@ a.ball {
     position: relative;
     text-align: center;
     z-index: 102;
-    animation: scale 0.25s;
-    animation-timing-function: ease-out;
+    -webkit-animation: scale 0.25s ease-out;
+    animation: scale 0.25s ease-out;
 }
 
 .bubble img {
@@ -338,10 +338,22 @@ a.ball {
 @keyframes scale {
     from {
         opacity: 0;
-        transform: translate(0,70px) scale(0.2);
+        transform: translate(0,50px) scale(0.2);
     }
     to {
         opacity: 1;
         transform: translate(0,0) scale(1);
+    }
+}
+
+
+@-webkit-keyframes scale {
+    from {
+        opacity: 0;
+        -webkit-transform: translate(0,50px) scale(0.2);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate(0,0) scale(1);
     }
 }
