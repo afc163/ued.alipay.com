@@ -4,6 +4,7 @@ seajs.config({
         'easing': 'arale/easing/1.0.0/easing',
         'transit': 'jquery/transit/0.9.9/transit',
         'handlebars': 'gallery/handlebars/1.0.2/handlebars',
-        'keymaster': 'gallery/keymaster/1.0.2/keymaster'
+        'keymaster': 'gallery/keymaster/1.0.2/keymaster',
+        'buzz': 'buzz/buzz'
     }
 });

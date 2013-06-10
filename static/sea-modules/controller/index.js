@@ -1,5 +1,6 @@
 define(function(require) {
     var $ = require('$');
+    var buzz = require('buzz');
 
     var win = $(window);
 
@@ -31,5 +32,5 @@ define(function(require) {
             }, 500)
         }, 1000);
     });
-
+    console.log(buzz);
 });
