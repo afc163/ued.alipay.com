@@ -40,7 +40,7 @@ define(function(require, exports, module) {
         }
         initShowInters = []
         clearTimeout(randomShowInter)
-        $('.ball').emove()
+        $('.ball').remove()
     }
 
     function random(from, to) {
