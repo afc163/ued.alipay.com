@@ -1,16 +1,16 @@
-define(function(require) {
+define(function(require, exports, module) {
 
-    var data = require('./data');
-    var Ball = require('./ball');
+    var data = require('./data')
+    var Ball = require('./ball')
 
     exports.initBalls = function(type) {
         for (var i=0; i<data[type].length; i++) {
-            new Ball(data[type][i]);
+            new Ball(data[type][i])
         }
     }
 
     exports.clearBalls = function() {
-        $('.ball').remove();
+        $('.ball').remove()
     }
 
-});
+})

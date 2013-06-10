@@ -1,7 +1,9 @@
 define(function(require, exports, module) {
 
     var $ = require('$')
+    var Handlebars = require('handlebars')
     require('easing')
+    var popTpl = $('#pop-template').html()
 
     function ball(config) {
         config = config || {}
@@ -79,7 +81,9 @@ define(function(require, exports, module) {
     }
 
     ball.prototype.showPop = function() {
-        
+        var html = Handlebars.compile(popTpl)({})
+        console.log(html)
+        $(html).appendTo('body')
     }
 
     module.exports = ball
@@ -93,13 +97,13 @@ define(function(require, exports, module) {
     }
 
     function limit(origin, increment, max) {
-        origin = parseInt(origin, 10);
+        origin = parseInt(origin, 10)
         if (origin + increment < 0) {
-            return -origin;
+            return -origin
         } else if (origin + increment + 80 > max) {
-            return max - origin - 80;
+            return max - origin - 80
         } else {
-            return increment;
+            return increment
         }
     }
 

@@ -259,3 +259,18 @@ body {
     text-indent: 0;
     opacity: 1!important;
 }
+
+/* bubble style */
+
+.bubble {
+    background: #fff;
+    border: 1px solid #5A8F00;
+    border-radius: 4px;
+    box-shadow: 0 0 3px 3px #333;
+    color: #333333;
+    width: 300px;
+    margin: 1em 0 3em;
+    padding: 50px 15px;
+    position: relative;
+    text-align: center;
+}
