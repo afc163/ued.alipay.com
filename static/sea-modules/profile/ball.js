@@ -115,12 +115,11 @@ define(function(require, exports, module) {
 
     ball.prototype.hidePop= function() {
         var that = this
-        this.element.removeClass('ball-hover')    
-        if (this.pop) {
-            this.pop.fadeOut(500, function() {
-                that.pop.remove()
-            });
-        }
+        this.element.removeClass('ball-hover')
+        var pop = this.pop;
+        this.pop.fadeOut(500, function() {
+            pop.remove()
+        });
         this.start()        
     }
 
@@ -138,8 +137,8 @@ define(function(require, exports, module) {
         origin = parseInt(origin, 10)
         if (origin + increment < 30) {
             return 30-origin
-        } else if (origin + increment + 80 > max) {
-            return max - origin - 80
+        } else if (origin + increment + 100 > max) {
+            return max - origin - 100
         } else {
             return increment
         }

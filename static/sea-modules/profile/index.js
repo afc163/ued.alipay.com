@@ -3,18 +3,23 @@ define(function(require, exports, module) {
     var $ = require('$')
     var data = require('./data')
     var Ball = require('./ball')
-    var inter
+    var initShowInters = []
+    var randomShowInter
 
     exports.initBalls = function(type) {
         var balls = []
         for (var i=0; i<data[type].length; i++) {
-            balls.push(new Ball(data[type][i]))
+            var inter = setTimeout(function() {
+                var ball = new Ball(data[type][i])
+                balls.push()
+            }, random(500, 3000))
+            initShowInters.push(inter)
         }
 
         var randomShow = function() {
-            inter = setTimeout(function() {
+            randomShowInter = setTimeout(function() {
                 if ($('.bubble').length === 0) {
-                    var b = balls[random(0, balls.length-1)];
+                    var b = balls[random(0, balls.length-1)]
                     b.showPop()
                     setTimeout(function() {
                         b.hidePop()
@@ -28,7 +33,11 @@ define(function(require, exports, module) {
     }
 
     exports.clearBalls = function() {
-        clearTimeout(inter)
+        for (var i=0; i<initShowInters.length; i++) {
+            clearTimeout(initShowInters[i])
+        }
+        initShowInters = []
+        clearTimeout(randomShowInter)
         $('.ball').remove()
     }
 

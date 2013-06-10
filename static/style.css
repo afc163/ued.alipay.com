@@ -364,7 +364,7 @@ a.ball {
     text-indent: -999px;
     overflow: hidden;
     opacity: 0;
-    transition: opacity 1.5s ease-out;
+    transition: opacity 2s ease-out;
 }
 
 .ball:hover,
@@ -393,7 +393,8 @@ a.ball {
 .bubble img {
     height: 100px;
     border-radius: 5px;
-    display: block;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
 @keyframes scale {

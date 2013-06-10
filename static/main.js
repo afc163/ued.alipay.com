@@ -29,7 +29,6 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index'],
             width: win.width(),
             height: win.height()
         });
-
     }
 
     setSize();
