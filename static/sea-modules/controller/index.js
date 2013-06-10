@@ -79,7 +79,7 @@ define(function(require) {
     /**
      * 键盘 a, s, d, f
      */
-    KeyboardJS.on("j", function() {
+    KeyboardJS.on("f", function() {
         bassSound.play();
         $("#a").addClass("action");
     }, function() {
@@ -87,7 +87,7 @@ define(function(require) {
         $("#a").removeClass("action");
     });
 
-    KeyboardJS.on("k", function() {
+    KeyboardJS.on("g", function() {
         hatSound.play();
         $("#s").addClass("action");
     }, function() {
@@ -95,7 +95,7 @@ define(function(require) {
         $("#s").removeClass("action");
     });
 
-    KeyboardJS.on("l", function() {
+    KeyboardJS.on("h", function() {
         snareSound.play();
         $("#d").addClass("action");
     }, function() {
@@ -103,7 +103,7 @@ define(function(require) {
         $("#d").removeClass("action");
     });
 
-    KeyboardJS.on("i", function() {
+    KeyboardJS.on("j", function() {
         tomSound.play();
         $("#f").addClass("action");
     }, function() {
