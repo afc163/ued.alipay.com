@@ -29,7 +29,6 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index'],
             width: win.width(),
             height: win.height()
         });
-
     }
 
     setSize();
@@ -48,7 +47,9 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index'],
             Profile.clearBalls();
         } else {
             var type = $(this).data('key');
-            Profile.initBalls(type);
+            setTimeout(function() {
+                Profile.initBalls(type);
+            }, 1000);
         }
 
         //播放声音
