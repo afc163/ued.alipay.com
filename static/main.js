@@ -86,7 +86,7 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index'],
     /**
      * 键盘 a, s, d, f
      */
-    KeyboardJS.on("j", function() {
+    KeyboardJS.on("h", function() {
         bassSound.play();
         $("#a").addClass("action");
     }, function() {
@@ -94,7 +94,7 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index'],
         $("#a").removeClass("action");
     });
 
-    KeyboardJS.on("k", function() {
+    KeyboardJS.on("j", function() {
         hatSound.play();
         $("#s").addClass("action");
     }, function() {
@@ -102,7 +102,7 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index'],
         $("#s").removeClass("action");
     });
 
-    KeyboardJS.on("l", function() {
+    KeyboardJS.on("k", function() {
         snareSound.play();
         $("#d").addClass("action");
     }, function() {
@@ -110,7 +110,7 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index'],
         $("#d").removeClass("action");
     });
 
-    KeyboardJS.on("i", function() {
+    KeyboardJS.on("l", function() {
         tomSound.play();
         $("#f").addClass("action");
     }, function() {
