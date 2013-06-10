@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="https://img.alipay.com/common/favicon/favicon.ico" type="image/x-icon" />
     <script src="static/sea-modules/seajs/seajs/2.0.0/sea.js"></script>
     <script src="static/config.js"></script>
-    <script src="static/main.js"></script>    
+    <script src="static/main.js"></script>
 </head>
 <body>
     <div class="wrapper fn-clear">
@@ -20,10 +20,10 @@
             <div class="index">
                 <h1 class="logo">UED</h1>
                 <ul class="nav fn-clear">
-                    <li><a href="#frame-top" class="frame-toggle" id="a">前端开发</a></li>
-                    <li><a href="#frame-bottom" class="frame-toggle" id="s">用户研究</a></li>
-                    <li><a href="#frame-left" class="frame-toggle" id="d">视觉设计</a></li>
-                    <li><a href="#frame-right" class="frame-toggle" id="f">交互设计</a></li>
+                    <li><a href="#frame-top" class="frame-toggle" id="a" data-key="wd">前端开发</a></li>
+                    <li><a href="#frame-bottom" class="frame-toggle" id="s" data-key="ur">用户研究</a></li>
+                    <li><a href="#frame-left" class="frame-toggle" id="d" data-key="ui">视觉设计</a></li>
+                    <li><a href="#frame-right" class="frame-toggle" id="f" data-key="ux">交互设计</a></li>
                 </ul>
                 <div class="keymap">
                     <span>f</span>
@@ -81,12 +81,10 @@
         </div>
     </div>
     <script type="type/template" id="pop-template">
-        <blockquote class="rectangle-speech-border">
-            <a href="{{url}}" target="_blank" class="image">
-                <img src="/static/images/{{name}}.png" alt="{{name}}头像" />
-            </a>
+        <div class="bubble">
+            <img src="/static/images/{{name}}.png" alt="{{name}}头像">
             <p class="message">{{message}}</p>
-        </blockquote>
+        </div>
     </script>
 </body>
 </html>
