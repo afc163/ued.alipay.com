@@ -11,6 +11,15 @@ define(function(require) {
     }
 
     setSize();
-    win.resize();
+    win.resize(setSize);
+
+    $(".frame-toggle").click(function(e) {
+        e.preventDefault();
+        var toggleId = $(this).attr("href");
+        var toggleClass = "frame " + toggleId.replace("#", "");
+        $(".frame").removeClass("action");
+        $(toggleId).addClass("action");
+        $("#frame-index").attr("class", toggleClass);
+    });
 
 });

@@ -1,3 +1,3 @@
 seajs.use('controller/index');
-seajs.use('profile/index');
+//seajs.use('profile/index');
 
