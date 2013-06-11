@@ -22,7 +22,8 @@ define(function(require, exports, module) {
 
     ball.prototype.init = function() {
         this.element = 
-            $('<a target="_blank" href="'+this.url+'" class="ball">' + this.name + '</a>').appendTo(this.parentNode)
+            $('<a target="_blank" title="点击去'+this.name+'的网站" href="'+this.url+'" class="ball">'
+                + this.name + '</a>').appendTo(this.parentNode)
 
         // 随机位置
         var winWidth = $(window).width()
