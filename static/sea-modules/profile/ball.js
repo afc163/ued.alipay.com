@@ -62,6 +62,9 @@ define(function(require, exports, module) {
     }
 
     ball.prototype.start = function() {
+        if (this.config.still) {
+            return;
+        }
         var that = this
         this.move(function() {
             that.start()

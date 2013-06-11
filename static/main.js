@@ -1,5 +1,6 @@
 seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'store'],
     function($, buzz, KeyboardJS, Profile, store) {
+
     $(document).ready(function() {
         /**
          * 音乐播放
@@ -57,6 +58,7 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'store'],
             } else {
                 var type = $(this).data('key');
                 Profile.initBalls(type);
+                Profile.youAreHere();
             }
 
             //播放声音
