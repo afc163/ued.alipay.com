@@ -4,18 +4,27 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'store'],
         /**
          * 音乐播放
          */
-        var bassSound = new buzz.sound( "static/media/bass1", {
-            formats: [ "ogg", "mp3"]
-        }),
-        hatSound = new buzz.sound( "static/media/hat1", {
-            formats: [ "ogg", "mp3"]
-        }),
-        snareSound = new buzz.sound( "static/media/snare1", {
-            formats: [ "ogg", "mp3"]
-        }),
-        tomSound = new buzz.sound( "static/media/tom1", {
-            formats: [ "ogg", "mp3"]
-        }), introSound = new buzz.sound( "static/media/intro", {
+        var bassSound = function() {
+            return new buzz.sound( "static/media/bass1", {
+                formats: [ "ogg", "mp3"]
+            });
+        },
+        hatSound = function() {
+            return new buzz.sound( "static/media/hat1", {
+                formats: [ "ogg", "mp3"]
+            });
+        },
+        snareSound = function() {
+            return new buzz.sound( "static/media/snare1", {
+                formats: [ "ogg", "mp3"]
+            });
+        },
+        tomSound = function() {
+            return new buzz.sound( "static/media/tom1", {
+                formats: [ "ogg", "mp3"]
+            });
+        },
+        introSound = new buzz.sound( "static/media/intro", {
             formats: [ "ogg", "mp3"]
         });
 
@@ -154,19 +163,19 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'store'],
         function playSound(item) {
             switch(item) {
                 case "h":
-                    bassSound.play();
+                    bassSound().play();
                     $("#h").addClass("action");
                     break;
                 case "j":
-                    hatSound.play();
+                    hatSound().play();
                     $("#j").addClass("action");
                     break;
                 case "k":
-                    snareSound.play();
+                    snareSound().play();
                     $("#k").addClass("action");
                     break;
                 case "l":
-                    tomSound.play();
+                    tomSound().play();
                     $("#l").addClass("action");
                     break;
                 default:
@@ -177,19 +186,15 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'store'],
         function stopSound(item) {
             switch(item) {
                 case "h":
-                    bassSound.stop();
                     $("#h").removeClass("action");
                     break;
                 case "j":
-                    hatSound.stop();
                     $("#j").removeClass("action");
                     break;
                 case "k":
-                    snareSound.stop();
                     $("#k").removeClass("action");
                     break;
                 case "l":
-                    tomSound.stop();
                     $("#l").removeClass("action");
                     break;
                 default:
