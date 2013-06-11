@@ -21,8 +21,18 @@ define(function(require, exports, module) {
     }
 
     ball.prototype.init = function() {
+        var title;
+        if (this.url.indexOf('weibo.com') > 0 ||
+            this.url.indexOf('t.qq.com') > 0) {
+            title = '点击去'+this.name+'的微博';
+        } else if (this.url.indexOf('alipay.com') > 0) {
+            title = '欢迎加入我们，点此去招聘页面';
+        } else {
+            title = '点击去'+this.name+'的网站';            
+        }
+
         this.element = 
-            $('<a target="_blank" title="点击去'+this.name+'的网站" href="'+this.url+'" class="ball">'
+            $('<a target="_blank" title="'+title+'" href="'+this.url+'" class="ball">'
                 + this.name + '</a>').appendTo(this.parentNode)
 
         // 随机位置
