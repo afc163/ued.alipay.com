@@ -108,7 +108,7 @@ define(function(require, exports, module) {
             Position.pin({
                 element: this.pop,
                 x: '50%',
-                y: '100%+30'
+                y: '100%+10'
             }, {
                 element: this.element,
                 x: '50%',
