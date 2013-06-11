@@ -88,6 +88,7 @@ body {
     font-size: 12px;
     color: #ababab;
     line-height: 36px;
+    z-index: 1;
 }
 .footer .copyright {
     padding-left: 50px;
@@ -97,9 +98,16 @@ body {
     margin-right: 50px;
     float: right;
 }
+
 .footer .footlink a {
     padding: 0 10px;
     color: #fff;
+}
+.footer .footlink a:hover {
+    text-decoration: none;
+}
+.footer .footlink i {
+    color: #999;
 }
 .frame {
     text-align:center;
@@ -504,4 +512,27 @@ a.ball-hover {
         opacity: 1;
         -webkit-transform: translate(0,0) scale(1);
     }
+}
+
+#duoshuo {
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    margin-left: -410px;
+    width: 800px;
+    background: #fff;
+    padding: 20px;
+    height: 420px;
+    overflow-y: scroll;
+    display: none;
+    border: 2px solid #ccc;
+}
+
+#duoshuo #close-duoshuo {
+    font-size: 14px;
+    color: #666;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
 }

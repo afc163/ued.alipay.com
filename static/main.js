@@ -127,8 +127,8 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'store'],
 
         $('#open-duoshuo').click(function(e) {
             e.preventDefault();
-            if ($('#duoshuo').html() === '') {
-                var duoshuoQuery = {short_name:"alipayued"};
+            if ($('#duoshuo .ds-thread').html() === '') {
+                window.duoshuoQuery = {short_name:"alipayued"};
                 (function() {
                     var ds = document.createElement('script');
                     ds.type = 'text/javascript';ds.async = true;
@@ -137,9 +137,12 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'store'],
                     (document.getElementsByTagName('head')[0] 
                     || document.getElementsByTagName('body')[0]).appendChild(ds);
                 })();
-            } else {
-                $('#duoshuo').fadeIn();
             }
+            $('#duoshuo').fadeIn();                
+        });
+
+        $('#close-duoshuo').click(function() {
+            $('#duoshuo').fadeOut();
         });
 
 
