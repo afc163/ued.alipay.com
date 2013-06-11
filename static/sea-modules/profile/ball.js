@@ -85,12 +85,11 @@ define(function(require, exports, module) {
         this.element.addClass('ball-hover')
         this.stop()
         
-        console.log(this.element[0].className)
         var html = Handlebars.compile(popTpl)(this.config)
         this.pop = $(html).appendTo('body')
-        this.pop.addClass('bubble-show');
 
         // 计算球出现的位置
+        // 提示框在下方
         if (this.element.offset().top < this.pop.innerHeight() + 20) {
             Position.pin({
                 element: this.pop,
@@ -101,6 +100,7 @@ define(function(require, exports, module) {
                 x: '50%',
                 y: '100% + 10'
             })
+            this.pop.removeClass('top').addClass('bottom')
         } else {
             Position.pin({
                 element: this.pop,
