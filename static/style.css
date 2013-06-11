@@ -1,3 +1,4 @@
+html,
 body {
     overflow: hidden;
 }
@@ -550,3 +551,87 @@ a.ball-hover {
     color: transparent;
 }
 
+/* ie block */
+
+#ie {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #e6f9f8;
+    z-index: 100;
+}
+.ie-bg {
+    margin: 260px auto;
+    width: 500px;
+    height: 300px;
+    padding: 50px;
+    background: #ffffff;
+    box-shadow: 0px 0px 4px #d9f0f0, 0px 4px 5px #c9e5e5;
+    border-radius: 5px 5px;
+    padding-bottom: 2px;
+    border: 2px solid #d9f0f0;
+    position: relative;
+}
+.ie-bg .logo {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border-left: 1px solid #ff8824;
+    border-right: 1px solid #ff8824;
+    border-bottom: 1px solid #ff8824;
+    background: #ffa457;
+    position: absolute;
+    top: -0px;
+    right: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+}
+.ie-bg .nosupport {
+    line-height: 50px;
+    font-size: 28px;
+    color: #87d2fb;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f6f6f6;
+}
+.ie-bg .support {
+    padding-top: 20px;
+    font-size: 16px;
+    color: #999;
+}
+.ie-bg .support span {
+    display: block;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+.ie-bg .support a {
+    display: block;
+    float: left;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #f6f6f6;
+    background-image: url(images/browser.jpg);
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+.ie-bg .support a:hover {
+    border: 1px solid #87d2fa;
+}
+.icon-firefox {
+    background-position: -15px -6px;
+}
+.icon-chrome {
+    background-position: -174px -6px;
+}
+.icon-safari {
+    background-position: -252px -6px;
+}
+.icon-ie {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    overflow: hidden;
+    background: url(images/browser.jpg) no-repeat -100px -13px;
+    float: left;
+}
