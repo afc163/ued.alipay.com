@@ -215,7 +215,7 @@ body {
 }
 .index .keymap {
     width: 280px;
-    margin: 100px auto 0 auto;
+    margin: 80px auto 0 auto;
 }
 .index .keymap span {
     cursor: pointer;
@@ -233,6 +233,13 @@ body {
     vertical-align: middle;
     color: #888;
     box-shadow:  0 -4px 0 0 rgba(0, 0, 0, 0.2) inset;
+}
+
+.index .keymap span.keypressed {
+    box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.2) inset;
+    padding-bottom: 1px;
+    position: relative;
+    top: 3px;
 }
 
 .page {
@@ -536,3 +543,10 @@ a.ball-hover {
     right: 10px;
     cursor: pointer;
 }
+
+.scale {
+    transform: rotate(2deg) scale(1.05);
+    text-shadow: 0 0 5px #111;
+    color: transparent;
+}
+

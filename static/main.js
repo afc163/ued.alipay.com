@@ -161,45 +161,31 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'store'],
          *  播放敲打声音
          */
         function playSound(item) {
+            $('#logo').addClass('scale');
             switch(item) {
                 case "h":
                     bassSound().play();
-                    $("#h").addClass("action");
                     break;
                 case "j":
                     hatSound().play();
-                    $("#j").addClass("action");
                     break;
                 case "k":
                     snareSound().play();
-                    $("#k").addClass("action");
                     break;
                 case "l":
                     tomSound().play();
-                    $("#l").addClass("action");
                     break;
                 default:
                     break;
             }
+            $("#"+item).addClass("action");
+            $('.keymap [data-type='+item+']').addClass('keypressed');
         }
 
         function stopSound(item) {
-            switch(item) {
-                case "h":
-                    $("#h").removeClass("action");
-                    break;
-                case "j":
-                    $("#j").removeClass("action");
-                    break;
-                case "k":
-                    $("#k").removeClass("action");
-                    break;
-                case "l":
-                    $("#l").removeClass("action");
-                    break;
-                default:
-                    break;
-            }
+            $('#logo').removeClass('scale');
+            $("#"+item).removeClass("action");
+            $('.keymap [data-type='+item+']').removeClass('keypressed');
         }
 
     });
