@@ -124,7 +124,6 @@ body {
     top: 100%;
     left: 0;
     background: #fed5d3;
-     background: url(images/bg4.jpg) no-repeat 0 0;
     background-size: cover;
 }
 #frame-bottom.action {
@@ -135,7 +134,6 @@ body {
     top: 0;
     left: -100%;
     background: #bfe8a8;
-     background: url(images/bg2.jpg) no-repeat 0 0;
     background-size: cover;
 }
 #frame-left.action {
@@ -146,7 +144,6 @@ body {
     top: 0;
     left: 100%;
     background: #faf0ba;
-     background: url(images/bg3.jpg) no-repeat 0 0;
     background-size: cover;
 }
 #frame-right.action {
@@ -287,6 +284,7 @@ body {
     bottom: -50px;
     left: 50%;
     margin-left: -50px;
+    z-index: 200;
 }
 #frame-bottom .header {
     top: 50px;
