@@ -351,23 +351,25 @@ a.ball {
     height: 60px;
     position: absolute;
     z-index: 101;
-    color: #fff;
+    color: #128DFF;
     text-decoration:none;
-    background: #f60;
+    background: #128DFF;
+    letter-spacing: 2px;
     border-radius: 60px;
     text-align:center;
     font-size: 16px;
-    border: 3px solid transparent;
-    text-indent: -999px;
+    border: 3px solid #128DFF;
     overflow: hidden;
     opacity: 0;
-    transition: opacity 2s ease-out;
+    transition: opacity 2s ease-out, color 0.2s ease-out, border-color 0.6s ease-out;
 }
 
 a.ball:hover,
 a.ball-hover {
-    text-indent: 0;
+    color: #fff;
+    z-index: 102;
     opacity: 1!important;
+    border-color: #D2E6FF;
 }
 
 /* tooltip style */

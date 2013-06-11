@@ -43,7 +43,7 @@ define(function(require, exports, module) {
 
         // 随机透明度
         this.element.css({
-            opacity: random(20, 50)/100
+            opacity: random(15, 40)/100
         })
 
     }
@@ -82,6 +82,9 @@ define(function(require, exports, module) {
     }
 
     ball.prototype.showPop = function() {
+        if (this.pop) {
+            this.pop.remove()
+        }
         this.element.addClass('ball-hover')
         this.stop()
         
@@ -117,10 +120,10 @@ define(function(require, exports, module) {
     ball.prototype.hidePop= function() {
         var that = this
         this.element.removeClass('ball-hover')
-        var pop = this.pop;
+        var pop = this.pop
         this.pop.fadeOut(500, function() {
             pop.remove()
-        });
+        })
         this.start()        
     }
 
