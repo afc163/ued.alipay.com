@@ -125,6 +125,24 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'store'],
         });
 
 
+        $('#open-duoshuo').click(function(e) {
+            e.preventDefault();
+            if ($('#duoshuo').html() === '') {
+                var duoshuoQuery = {short_name:"alipayued"};
+                (function() {
+                    var ds = document.createElement('script');
+                    ds.type = 'text/javascript';ds.async = true;
+                    ds.src = 'http://static.duoshuo.com/embed.js';
+                    ds.charset = 'UTF-8';
+                    (document.getElementsByTagName('head')[0] 
+                    || document.getElementsByTagName('body')[0]).appendChild(ds);
+                })();
+            } else {
+                $('#duoshuo').fadeIn();
+            }
+        });
+
+
         /*
          *  播放敲打声音
          */
