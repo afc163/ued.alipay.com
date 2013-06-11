@@ -192,6 +192,7 @@ body {
     margin: 100px auto 0 auto;
 }
 .index .keymap span {
+    cursor: pointer;
     display: block;
     float: left;
     width: 36px;
