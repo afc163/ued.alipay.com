@@ -124,7 +124,9 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'store'],
             stopSound(currentItem);
         });
 
-
+        /**
+         *  多说
+         */
         $('#open-duoshuo').click(function(e) {
             e.preventDefault();
             if ($('#duoshuo .ds-thread').html() === '') {
@@ -138,7 +140,7 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'store'],
                     || document.getElementsByTagName('body')[0]).appendChild(ds);
                 })();
             }
-            $('#duoshuo').fadeIn();                
+           $('#duoshuo').fadeIn();
         });
 
         $('#close-duoshuo').click(function() {

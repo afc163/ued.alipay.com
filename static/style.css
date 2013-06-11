@@ -188,13 +188,13 @@ body {
 }
 .index .nav {
     margin: 50px auto;
-    width: 60%;
+    width: 780px;
 }
 .index li {
     float: left;
-    width: 20.5%;
-    height: 200px;
-    margin: 0 6% 0 0;
+    width: 180px;
+    height: 180px;
+    margin: 0 20px 0 0;
 }
 .index li:last-child {
     margin: 0 0;
@@ -521,13 +521,13 @@ a.ball-hover {
     margin-left: -410px;
     width: 800px;
     background: #fff;
-    padding: 20px;
+    padding: 20px 20px;
     height: 420px;
-    overflow-y: scroll;
+    overflow-y: auto;
     display: none;
-    border: 2px solid #ccc;
+    border-radius: 10px 10px;
+    border: 10px solid #d4d9dc;
 }
-
 #duoshuo #close-duoshuo {
     font-size: 14px;
     color: #666;
