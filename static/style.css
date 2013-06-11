@@ -1,6 +1,25 @@
 body {
     overflow: hidden;
 }
+/*
+ * icon font
+ */
+@font-face {
+    font-family: "rei";
+    src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130502"); /* IE9 */
+    src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130502#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("https://i.alipayobjects.com/common/fonts/rei.woff?20130502") format("woff"), /* chrome 6+、firefox 3.6+、Safari5.1+、Opera 11+ */
+    url("https://i.alipayobjects.com/common/fonts/rei.ttf?20130502")  format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    url("https://i.alipayobjects.com/common/fonts/rei.svg?20130502#rei") format("svg"); /* iOS 4.1- */
+}
+.iconfont {
+    font-family:"rei";
+    font-style: normal;
+    font-weight: normal;
+    cursor: default;
+    -webkit-font-smoothing: antialiased;
+}
+
 
 /*
  * 页面布局样式
@@ -256,16 +275,24 @@ body {
     height: 100px;
     background: rgba(0, 0, 0, 0.2);
     text-align: center;
-    text-indent: -9999em;
     overflow: hidden;
     display: block;
     border-radius: 100px 100px;
     position: absolute;
+    font-size: 38px;
+    color: #fff;
+    line-height: 60px;
+    z-index: 210;
+}
+.page .goto i {
+    cursor: pointer;
+    display: block;
 }
 .page .goto:hover {
     background: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    cursor: pointer;
 }
-
 
 #frame-top .header {
     bottom: 50px;
@@ -285,7 +312,9 @@ body {
     bottom: -50px;
     left: 50%;
     margin-left: -50px;
-    z-index: 200;
+}
+#frame-top .goto i {
+    padding-bottom: 30px;
 }
 #frame-bottom .header {
     top: 50px;
@@ -307,6 +336,9 @@ body {
     left: 50%;
     margin-left: -50px;
 }
+#frame-bottom .goto i {
+    padding-top: 35px;
+}
 #frame-left .header {
     top: 50px;
     right: 50px;
@@ -324,6 +356,11 @@ body {
     top: 50%;
     margin-top: -50px;
     right: -50px;
+    line-height: 100px;
+}
+#frame-left .goto i {
+    width: 50px;
+    padding-left: 10px;
 }
 #frame-right .header {
     width: 330px;
@@ -344,6 +381,11 @@ body {
     top: 50%;
     margin-top: -50px;
     left: -50px;
+    line-height: 100px;
+}
+#frame-right .goto i {
+    width: 50px;
+    padding-left: 40px;
 }
 
 /* profile style */
