@@ -7,6 +7,7 @@ seajs.config({
         'keymaster': 'gallery/keymaster/1.0.2/keymaster',
         'position': 'arale/position/1.0.1/position',
         'buzz': 'buzz/buzz',
-        'keyboard': 'keyboard/keyboard'
+        'keyboard': 'keyboard/keyboard',
+        'store': 'gallery/store/1.3.7/store'
     }
 });
