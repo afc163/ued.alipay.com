@@ -44,6 +44,26 @@ define(function(require, exports, module) {
         $('.tooltip').remove()
     }
 
+    exports.youAreHere = function() {
+        setTimeout(function() {
+            var you = new Ball({
+                name: '你',
+                message: '你在这里，<br>欢迎加入我们！',
+                url: 'http://ued.alipay.com/2010job/'
+            });
+            you.element.css({
+                width: '40px',
+                height: '40px',
+                borderRadius: '60px',
+                background: '#f60',
+                borderColor: '#f60',
+                color: '#f60'
+            });
+        }, 3000);
+    }
+
+    // Helper
+
     function random(from, to) {
         from = from || 0
         to = to || 1
