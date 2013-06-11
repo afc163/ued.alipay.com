@@ -38,9 +38,9 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'store'],
             e.preventDefault();
             var toggleId = $(this).attr("href");
             var toggleClass = "frame " + toggleId.replace("#", "");
-            $(".frame").removeClass("action");
-            $(toggleId).addClass("action");
-            $("#frame-index").attr("class", toggleClass);
+
+            //切换屏幕
+            frameChange(toggleId, toggleClass);
 
             //初始化泡泡
             if (toggleId === '#frame-index') {
@@ -56,6 +56,14 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'store'],
             setTimeout(function() {stopSound(currentId)}, 1000);
         });
 
+        //切换屏幕函数
+        function frameChange(toggleId, toggleClass) {
+            $(".frame").removeClass("action");
+            $(toggleId).addClass("action");
+            $("#frame-index").attr("class", toggleClass);
+        }
+
+        //页面加载资源时候的loading
         var isLoaded = store.get("uedloaded");
         if(isLoaded === true) {
             $("#loading").addClass("action").hide();
@@ -96,6 +104,13 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'store'],
             playSound("l")
         }, function() {
             stopSound("l");
+        });
+
+        /**
+         *  键盘上、下、左、右事件
+         */
+        KeyboardJS.on("up, down, left, right", function(e) {
+            e.preventDefault();
         });
 
         /**
