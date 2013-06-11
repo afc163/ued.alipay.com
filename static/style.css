@@ -88,7 +88,7 @@ body {
     font-size: 12px;
     color: #ababab;
     line-height: 36px;
-    z-index: 1;
+    z-index: 4;
 }
 .footer .copyright {
     padding-left: 50px;
@@ -518,7 +518,7 @@ a.ball-hover {
     position: absolute;
     top: 240px;
     left: 50%;
-    margin-left: -420px;
+    margin-left: -430px;
     width: 800px;
     background: #fff;
     padding: 20px 20px;
