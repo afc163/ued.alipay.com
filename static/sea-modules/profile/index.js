@@ -15,7 +15,7 @@ define(function(require, exports, module) {
                     balls.push(ball)
                 }, random(500, 3000))
                 initShowInters.push(inter)
-            })(data[type][i]);
+            })(data[type][i])
         }
 
         var randomShow = function() {
@@ -41,6 +41,7 @@ define(function(require, exports, module) {
         initShowInters = []
         clearTimeout(randomShowInter)
         $('.ball').remove()
+        $('.tooltip').remove()
     }
 
     function random(from, to) {
