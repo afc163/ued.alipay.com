@@ -33,7 +33,7 @@ define(function(require, exports, module) {
         })
 
         // 随机大小
-        var r = random(50, 100)
+        var r = random(50, 120)
         this.element.css({
             width: r,
             height: r,
