@@ -101,9 +101,12 @@
         </div>
     </div>
     <script type="type/template" id="pop-template">
-        <div class="bubble">
-            <img src="static/images/head/{{name}}.png" alt="{{name}}头像">
-            <p class="message">{{message}}</p>
+        <div class="tooltip fade top in">
+            <div class="tooltip-arrow"></div>
+            <div class="tooltip-inner">
+                <img src="static/images/head/{{name}}.png" alt="{{name}}头像">
+                <p class="message">{{message}}</p>
+            </div>
         </div>
     </script>
 </body>
