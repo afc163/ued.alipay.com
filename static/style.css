@@ -97,9 +97,16 @@ body {
     margin-right: 50px;
     float: right;
 }
+
 .footer .footlink a {
     padding: 0 10px;
     color: #fff;
+}
+.footer .footlink a:hover {
+    text-decoration: none;
+}
+.footer .footlink i {
+    color: #999;
 }
 .frame {
     text-align:center;
