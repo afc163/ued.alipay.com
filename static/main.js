@@ -6,22 +6,22 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'store'],
          * 音乐播放
          */
         var bassSound = function() {
-            return new buzz.sound( "static/media/bass1", {
+            return new buzz.sound( "static/media/ux", {
                 formats: [ "ogg", "mp3"]
             });
         },
         hatSound = function() {
-            return new buzz.sound( "static/media/hat1", {
+            return new buzz.sound( "static/media/ue", {
                 formats: [ "ogg", "mp3"]
             });
         },
         snareSound = function() {
-            return new buzz.sound( "static/media/snare1", {
+            return new buzz.sound( "static/media/ui", {
                 formats: [ "ogg", "mp3"]
             });
         },
         tomSound = function() {
-            return new buzz.sound( "static/media/tom1", {
+            return new buzz.sound( "static/media/wd", {
                 formats: [ "ogg", "mp3"]
             });
         },
