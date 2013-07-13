@@ -44,7 +44,7 @@ define({
         message: '前端工程师',
         url: 'http://zhanxin.info'
     }],
-    'ur': [{
+    'ux': [{
         name: '偏右',
         message: '前端工程狮',
         url: 'http://weibo.com/afc163'
@@ -53,7 +53,7 @@ define({
         message: '前端工程师',
         url: 'http://zhanxin.info'
     }],
-    'ux': [{
+    'ue': [{
         name: '偏右',
         message: '前端工程狮',
         url: 'http://weibo.com/afc163'

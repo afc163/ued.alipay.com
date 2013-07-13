@@ -5,11 +5,19 @@ define(function(require, exports, module) {
     var Ball = require('./ball')
     var initShowInters = []
     var randomShowInter
+    var youarehereInter
+    var BaseColors = {
+        wd: '#005A8D',
+        ux: '#007938',
+        ue: '#795520',
+        ui: '#B90000'
+    }
 
     exports.initBalls = function(type) {
         var balls = []
         for (var i=0; i<data[type].length; i++) {
             (function(config) {
+                config.color = BaseColors[type];
                 var inter = setTimeout(function() {
                     var ball = new Ball(config)
                     balls.push(ball)
@@ -40,24 +48,26 @@ define(function(require, exports, module) {
         }
         initShowInters = []
         clearTimeout(randomShowInter)
+        clearTimeout(youarehereInter)
         $('.ball').remove()
         $('.tooltip').remove()
     }
 
     exports.youAreHere = function() {
-        setTimeout(function() {
+        youarehereInter = setTimeout(function() {
             var you = new Ball({
-                name: '你',
-                message: '你在这里，<br>欢迎加入我们！',
+                name: '你在这里',
+                message: '欢迎加入我们！',
                 url: 'http://ued.alipay.com/2010job/'
             });
             you.element.css({
-                width: '40px',
-                height: '40px',
+                width: '30px',
+                height: '30px',
                 borderRadius: '60px',
-                background: '#f60',
-                borderColor: '#f60',
-                color: '#f60'
+                background: '#FF8823',
+                borderColor: '#FF8823',
+                color: '#FF8823',
+                opacity: 0.8
             });
         }, 3000);
     }

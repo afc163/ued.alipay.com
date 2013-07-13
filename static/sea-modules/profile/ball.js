@@ -14,6 +14,7 @@ define(function(require, exports, module) {
         this.image = config.image
         this.message = config.message
         this.url = config.url
+        this.color = config.color;
 
         this.init()
         this.bindHover()
@@ -32,35 +33,36 @@ define(function(require, exports, module) {
         }
 
         this.element = 
-            $('<a target="_blank" title="'+title+'" href="'+this.url+'" class="ball">'
-                + this.name + '</a>').appendTo(this.parentNode)
+            $('<a target="_blank" title="'+title+'" href="'+this.url+'" class="ball"></a>').appendTo(this.parentNode)
+
+        this.element.css('background', this.color);
+        this.element.css('border-color', this.color);
 
         // 随机位置
         var winWidth = $(window).width()
         var winHeight = $(window).height()
         this.element.css({
-            top: random(winHeight/8, winHeight*7/8),
-            left: random(winHeight/8, winWidth*7/8)
+            top: random(winHeight/5, winHeight*4/5),
+            left: random(winWidth/5, winWidth*4/5)
         })
 
         // 随机大小
-        var r = random(50, 120)
+        var r = random(25, 150)
         this.element.css({
             width: r,
             height: r,
-            lineHeight: r + 'px',
             borderRadius: r + 'px'
         })
 
         // 随机透明度
         this.element.css({
-            opacity: random(15, 40)/100
+            opacity: random(15, 35)/100
         })
 
     }
 
     ball.prototype.move = function(callback) {
-        var duration = random(6000, 15000)
+        var duration = random(12000, 50000)
 
         this.element.animate({
             top: '+=' + limit(this.element.css('top'), random(-200, 200), $(window).height()),
@@ -103,32 +105,13 @@ define(function(require, exports, module) {
         this.stop()
         
         var html = Handlebars.compile(popTpl)(this.config)
-        this.pop = $(html).appendTo('body')
+        this.pop = $(html).appendTo(this.element)
 
-        // 计算球出现的位置
-        // 提示框在下方
-        if (this.element.offset().top < this.pop.innerHeight() + 20) {
-            Position.pin({
-                element: this.pop,
-                x: '50%',
-                y: 0
-            }, {
-                element: this.element,
-                x: '50%',
-                y: '100% + 10'
-            })
-            this.pop.removeClass('top').addClass('bottom')
-        } else {
-            Position.pin({
-                element: this.pop,
-                x: '50%',
-                y: '100%+10'
-            }, {
-                element: this.element,
-                x: '50%',
-                y: 0
-            })
-        }
+        Position.pin(this.pop, {
+            element: this.element,
+            x: '50%',
+            y: '50%'
+        })
     }
 
     ball.prototype.hidePop= function() {

@@ -22,9 +22,9 @@
                 <h1 class="logo" id="logo"></h1>
                 <ul class="nav fn-clear">
                     <li><a href="#frame-top" class="frame-toggle" id="h" data-key="wd">前端开发</a></li>
-                    <li><a href="#frame-bottom" class="frame-toggle" id="j" data-key="ur">用户研究</a></li>
+                    <li><a href="#frame-bottom" class="frame-toggle" id="j" data-key="ux">用户研究</a></li>
                     <li><a href="#frame-left" class="frame-toggle" id="k" data-key="ui">视觉设计</a></li>
-                    <li><a href="#frame-right" class="frame-toggle" id="l" data-key="ux">交互设计</a></li>
+                    <li><a href="#frame-right" class="frame-toggle" id="l" data-key="ue">交互设计</a></li>
                 </ul>
                 <div class="keymap">
                     <span data-type="h">H</span>
@@ -101,9 +101,9 @@
     </div>
     <script type="type/template" id="pop-template">
         <div class="tooltip fade top in">
-            <div class="tooltip-arrow"></div>
+            <img src="static/images/head/{{name}}.png" alt="{{name}}头像">            
             <div class="tooltip-inner">
-                <img src="static/images/head/{{name}}.png" alt="{{name}}头像">
+                <p class="name">{{{name}}}</p>
                 <p class="message">{{{message}}}</p>
             </div>
         </div>
