@@ -31,9 +31,10 @@ define(function(require, exports, module) {
         } else {
             title = '点击去'+this.name+'的网站';            
         }
-
-        this.element = 
-            $('<a target="_blank" title="'+title+'" href="'+this.url+'" class="ball"></a>').appendTo(this.parentNode)
+        
+        var html = this.url ? '<a target="_blank" title="'+title+'" href="'+this.url+'" class="ball"></a>'
+                            : '<a target="_blank" href="#" class="ball"></a>';
+        this.element = $(html).appendTo(this.parentNode)
 
         this.element.css('background', this.color);
         this.element.css('border-color', this.color);
