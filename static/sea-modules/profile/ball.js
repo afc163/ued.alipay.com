@@ -13,7 +13,7 @@ define(function(require, exports, module) {
         this.name = config.name || '花名'
         this.image = config.image
         this.message = config.message
-        this.url = config.url
+        this.url = config.url || ''
         this.color = config.color;
 
         this.init()

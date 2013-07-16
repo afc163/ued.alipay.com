@@ -1,48 +1,55 @@
 define({
     'wd': [{
         name: '偏右',
-        message: '前端工程狮',
-        url: 'http://weibo.com/afc163'
+        message: '前端工程狮'
     }, {
         name: '展新',
-        message: '前端工程师',
-        url: 'http://zhanxin.info'
+        message: '前端工程师'
     }, {
-        name: '展新',
-        message: '前端工程师',
-        url: 'http://zhanxin.info'
+        name: '乔花',
+        message: '前端工程师'
     }, {
-        name: '展新',
-        message: '前端工程师',
-        url: 'http://zhanxin.info'
+        name: '余化',
+        message: '前端工程师'
     }, {
-        name: '展新',
-        message: '前端工程师',
-        url: 'http://zhanxin.info'
+        name: '倚松',
+        message: '前端工程师'
     }, {
-        name: '展新',
-        message: '前端工程师',
-        url: 'http://zhanxin.info'
+        name: '初成',
+        message: '前端工程师'
     }, {
-        name: '展新',
-        message: '前端工程师',
-        url: 'http://zhanxin.info'
+        name: '天作',
+        message: '前端工程师'
     }, {
-        name: '展新',
-        message: '前端工程师',
-        url: 'http://zhanxin.info'
+        name: '定风波',
+        message: '前端工程师'
     }, {
-        name: '展新',
-        message: '前端工程师',
-        url: 'http://zhanxin.info'
+        name: '左宜',
+        message: '前端工程师'
     }, {
-        name: '展新',
-        message: '前端工程师',
-        url: 'http://zhanxin.info'
+        name: '张初尘',
+        message: '前端工程师'
     }, {
-        name: '展新',
-        message: '前端工程师',
-        url: 'http://zhanxin.info'
+        name: '徐干',
+        message: '前端工程师'
+    }, {
+        name: '沉鱼',
+        message: '前端工程师'
+    }, {
+        name: '玉伯',
+        message: '前端工程师'
+    }, {
+        name: '禾几',
+        message: '前端工程师'
+    }, {
+        name: '竹卢',
+        message: '前端工程师'
+    }, {
+        name: '莫登',
+        message: '前端工程师'
+    }, {
+        name: '远尘',
+        message: '前端工程师'
     }],
     'ux': [{
         name: '偏右',
