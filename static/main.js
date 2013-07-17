@@ -1,5 +1,5 @@
-seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'store'],
-    function($, buzz, KeyboardJS, Profile, store) {
+seajs.use(['$', 'buzz', 'keyboard', 'profile/index'],
+    function($, buzz, KeyboardJS, Profile) {
 
     $(document).ready(function() {
         /**
@@ -73,22 +73,6 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'store'],
             $(toggleId).addClass("action");
             $("#frame-index").attr("class", toggleClass);
         }
-
-        //页面加载资源时候的loading
-        var isLoaded = store.get("uedloaded");
-        if(isLoaded === true) {
-            $("#loading").addClass("action").hide();
-        } else {
-            setTimeout(function() {
-                $("#loading").addClass("action");
-                introSound.play();
-                setTimeout(function() {
-                    $("#loading").hide();
-                }, 500);
-            }, 1000);
-            store.set("uedloaded", true)
-        }
-
 
         /**
          * 键盘 H, J, K, L
