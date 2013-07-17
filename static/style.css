@@ -21,7 +21,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-
 /*
  * 页面布局样式
  */
@@ -145,58 +144,87 @@ body {
 }
 .index .nav {
     margin: 50px auto;
-    width: 780px;
+    width: 830px;
 }
 .index li {
     float: left;
-    width: 180px;
-    height: 180px;
-    margin: 0 20px 0 0;
+    width: 161px;
+    height: 161px;
+    margin: 0 60px 0 0;
 }
 .index li:last-child {
     margin: 0 0;
 }
+
+.frame-toggle {
+    box-shadow: 3px 3px 15px #999;
+}
+
+#h {
+    background: url(images/ux.png);
+}
+
+#j {
+    background: url(images/ue.png);
+}
+
+#k {
+    background: url(images/ui.png);
+}
+
+#l {
+    background: url(images/wd.png);
+}
+
+
 .index li a {
     display: block;
     background: #ffe6bc;
     height: 100%;
     text-indent: -9999em;
     overflow: hidden;
-    -webkit-transition: all .1s cubic-bezier(.8, 0, 1, .8) 0s;
-	   -moz-transition: all .1s cubic-bezier(.8, 0, 1, .8) 0s;
-		 -o-transition: all .1s cubic-bezier(.8, 0, 1, .8) 0s;
-			transition: all .1s cubic-bezier(.8, 0, 1, .8) 0s;
+    -webkit-transition: all .2s cubic-bezier(.8, 0, 1, .8) 0s;
+	   -moz-transition: all .2s cubic-bezier(.8, 0, 1, .8) 0s;
+		 -o-transition: all .2s cubic-bezier(.8, 0, 1, .8) 0s;
+			transition: all .2s cubic-bezier(.8, 0, 1, .8) 0s;
 }
 .index li a:hover, .index li .action {
-    border-radius: 100px 100px;
+    border-radius: 160px;
 }
 .index .keymap {
-    width: 280px;
-    margin: 80px auto 0 auto;
+    width: 256px;
+    margin: 140px auto 0 auto;
 }
 .index .keymap span {
     cursor: pointer;
     display: block;
     float: left;
-    width: 36px;
-    height: 34px;
-    font-size: 20px;
-    line-height: 32px;
+    width: 42px;
+    height: 40px;
+    font-size: 26px;
+    line-height: 38px;
     padding-bottom: 4px;
-    margin: 0 15px;
-    border: 1px solid #dedede;
+    margin: 0 10px;
+    border: 1px solid #bbb;
     border-radius: 4px 4px;
     text-align: center;
     vertical-align: middle;
-    color: #888;
+    color: #999;
     box-shadow:  0 -4px 0 0 rgba(0, 0, 0, 0.2) inset;
 }
 
 .index .keymap span.keypressed {
-    box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset;
     padding-bottom: 1px;
     position: relative;
     top: 3px;
+}
+
+.keymap-description {
+    clear: both;
+    color: #999;
+    padding-top: 14px;
+    font-size: 14px;
 }
 
 .page {
@@ -210,35 +238,15 @@ body {
     height: 100px;
     position: absolute;
 }
-.page .logo {
-    line-height: 100px;
-    font-size: 60px;
-    float: left;
+.page .category-logo {
+    text-indent: -9999px;
+    overflow: hidden;
+    height: 80px;
 }
-.page .category {
-    line-height: 100px;
-    font-size: 32px;
-    padding-left: 20px;
-    color: #fff;
-    float: left;
-}
-
-.page .intro {
-    width: 450px;
-    height: auto;
-    position: absolute;
-        color: #fff;
-
-}
-.page .intro-det {
-    background: rgba(0, 0, 0, 0.4);
-    padding: 15px 15px;
-    text-align: left;
+.page .category-description {
     font-size: 14px;
-}
-.page .intro-det p {
-    text-indent: 2em;
-    margin-bottom: 1em;
+    text-align:left;
+    line-height: 1.8;
 }
 
 .page .goto {
@@ -266,19 +274,13 @@ body {
 }
 
 #frame-top .header {
-    bottom: 50px;
-    right: 50px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    top: 60px;
+    right: 140px;
+    color: #BC6363;
 }
-#frame-top .intro {
-    border-top: 1px solid  rgba(255, 255, 255, 0.4);
-    border-right: 1px solid  rgba(255, 255, 255, 0.4);
-    padding: 25px 25px 0 0;
-    bottom: 50px;
-    left: 50px;
+#frame-top .category-logo {
+    background: url(images/ui-logo.png) no-repeat;
 }
-
 #frame-top .goto {
     bottom: -50px;
     left: 50%;
@@ -288,19 +290,12 @@ body {
     padding-bottom: 30px;
 }
 #frame-bottom .header {
-    top: 50px;
-    left: 50px;
-    width: 330px;
-    padding-left: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.4);
-    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    left: 140px;
+    top: 60px;
+    color: #C59145;
 }
-#frame-bottom .intro {
-    border-left: 1px solid  rgba(255, 255, 255, 0.4);
-    border-bottom: 1px solid  rgba(255, 255, 255, 0.4);
-    padding: 0 0 25px 25px;
-    top: 50px;
-    right: 50px;
+#frame-bottom .category-logo {
+    background: url(images/ue-logo.png) no-repeat;
 }
 #frame-bottom .goto {
     top: -50px;
@@ -311,17 +306,12 @@ body {
     padding-top: 35px;
 }
 #frame-left .header {
-    top: 50px;
-    right: 50px;
-    border-top: 1px solid rgba(255, 255, 255, 0.4);
-    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    right: 140px;
+    top: 60px;
+    color: #298848;
 }
-#frame-left .intro {
-    border-top: 1px solid  rgba(255, 255, 255, 0.4);
-    border-left: 1px solid  rgba(255, 255, 255, 0.4);
-    padding: 25px 0 0 25px;
-    bottom: 50px;
-    right: 50px;
+#frame-left .category-logo {
+    background: url(images/ux-logo.png) no-repeat;
 }
 #frame-left .goto {
     top: 50%;
@@ -335,18 +325,12 @@ body {
 }
 #frame-right .header {
     width: 330px;
-    padding-left: 30px;
-    left: 50px;
-    bottom: 50px;
-    border-left: 1px solid rgba(255, 255, 255, 0.4);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    left: 140px;
+    top: 60px;
+    color: #3589B0;
 }
-#frame-right .intro {
-    border-bottom: 1px solid  rgba(255, 255, 255, 0.4);
-    border-right: 1px solid  rgba(255, 255, 255, 0.4);
-    padding: 0 25px 25px 0;
-    top: 50px;
-    left: 50px;
+#frame-right .category-logo {
+    background: url(images/wd-logo.png) no-repeat;
 }
 #frame-right .goto {
     top: 50%;
