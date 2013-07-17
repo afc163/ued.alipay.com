@@ -188,6 +188,11 @@ body {
     font-size: 120px;
     margin: 20px auto;
 }
+.index .alipay-ued {
+    position: absolute;
+    top: 0;
+    left: 100px;
+}
 .index .nav {
     margin: 50px auto;
     width: 780px;
