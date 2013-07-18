@@ -1,0 +1,23 @@
+{
+  "family": "alipay",
+  "name": "share",
+  "version": "0.1.2",
+  "description": "SNS分享组件",
+  "homepage": "http://arale.alipay.im/alipay/share/",
+  "author": "远尘 <hua.lu@alipay.com>",
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/alipay-js/share"
+  },
+  "bugs": {
+    "url": "http://gitlab.alibaba-inc.com/alipay-js/share/issues"
+  },
+  "keywords": ["widget"],
+  "licenses": "MIT",
+  "spm": {
+    "output": ["share.js"],
+    "alias": {
+      "$": "$"
+    }
+  }
+}
