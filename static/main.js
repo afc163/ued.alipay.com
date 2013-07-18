@@ -31,6 +31,12 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'share'],
             formats: [ "ogg", "mp3"]
         });
 
+        // preload mp3 file
+        bassSound();
+        hatSound();
+        snareSound();
+        tomSound();
+
         /**
          * 操作事件
          */
