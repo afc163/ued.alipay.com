@@ -26,11 +26,8 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'share'],
             return new buzz.sound( "static/media/打字", {
                 formats: [ "ogg", "mp3"]
             });
-        },
-        introSound = new buzz.sound( "static/media/intro", {
-            formats: [ "ogg", "mp3"]
-        });
-
+        };
+        
         // preload mp3 file
         bassSound();
         hatSound();
