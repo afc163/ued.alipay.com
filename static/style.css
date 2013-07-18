@@ -34,8 +34,8 @@ body {
     width: 100%;
     height: 36px;
     background: rgba(0, 0, 0, 0.4);
-    font-size: 12px;
-    color: #ababab;
+    font-size: 13px;
+    color: #f8f8f8;
     line-height: 36px;
     z-index: 4;
 }
@@ -56,7 +56,7 @@ body {
     text-decoration: none;
 }
 .footer .footlink i {
-    color: #999;
+    color: #bbb;
 }
 .frame {
     text-align:center;
@@ -182,10 +182,10 @@ body {
     height: 100%;
     text-indent: -9999em;
     overflow: hidden;
-    -webkit-transition: all .2s cubic-bezier(.8, 0, 1, .8) 0s;
-	   -moz-transition: all .2s cubic-bezier(.8, 0, 1, .8) 0s;
-		 -o-transition: all .2s cubic-bezier(.8, 0, 1, .8) 0s;
-			transition: all .2s cubic-bezier(.8, 0, 1, .8) 0s;
+    -webkit-transition: all .1s cubic-bezier(.8, 0, 1, .8) 0s;
+	   -moz-transition: all .1s cubic-bezier(.8, 0, 1, .8) 0s;
+		 -o-transition: all .1s cubic-bezier(.8, 0, 1, .8) 0s;
+			transition: all .1s cubic-bezier(.8, 0, 1, .8) 0s;
 }
 .index li a:hover, .index li .action {
     border-radius: 160px;
@@ -434,13 +434,13 @@ a.ball-hover {
 
 #duoshuo {
     position: absolute;
-    top: 240px;
+    top: 220px;
     left: 50%;
-    margin-left: -430px;
-    width: 800px;
+    margin-left: -480px;
+    width: 900px;
     background: #fff;
     padding: 20px 20px;
-    height: 420px;
+    height: 440px;
     overflow-y: auto;
     display: none;
     border-radius: 10px 10px;
@@ -555,12 +555,25 @@ a.ball-hover {
     background: url(images/sidebar.png) no-repeat;    
 }
 
-.sidebar a {
+.sidebar a,
+.sidebar span {
     display:block;
     width: 57px;
     height: 40px;
+    text-decoration:none;    
 }
 
 .sidebar a.sidebar-alipay {
     height: 102px;
+}
+
+.quiet:after {
+    color: #C11B1B;
+    content: "×";
+    font-size: 32px;
+    left: 18px;
+    line-height: 1;
+    position: relative;
+    top: 3px;
+    text-decoration:none;
 }

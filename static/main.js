@@ -1,6 +1,8 @@
 seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'share'],
     function($, buzz, KeyboardJS, Profile, Share) {
 
+    var isQuiet = false;
+
     $(document).ready(function() {
         /**
          * 音乐播放
@@ -145,7 +147,6 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'share'],
         /**
          *  分享链接
          */
-        console.log(Share);
         new Share({
             container: '.sidebar',
             service: ['sina', 'qq', 'douban'],
@@ -158,10 +159,26 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'share'],
         })
 
         /*
+         *  静音
+         */
+        $('.sidebar-quiet').toggle(function() {
+            $(this).addClass('quiet');
+        }, function() {
+            $(this).removeClass('quiet');            
+        });
+
+        /*
          *  播放敲打声音
          */
         function playSound(item) {
             $('#logo').addClass('scale');
+            $("#"+item).addClass("action");
+            $('.keymap [data-type='+item+']').addClass('keypressed');
+
+            if ($('.sidebar-quiet').hasClass('quiet')) {
+                return;
+            }
+
             switch(item) {
                 case "h":
                     bassSound().play();
@@ -178,8 +195,6 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'share'],
                 default:
                     break;
             }
-            $("#"+item).addClass("action");
-            $('.keymap [data-type='+item+']').addClass('keypressed');
         }
 
         function stopSound(item) {
