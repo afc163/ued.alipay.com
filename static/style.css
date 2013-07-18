@@ -154,10 +154,6 @@ body {
     margin: 0 0;
 }
 
-.frame-toggle {
-    box-shadow: 3px 3px 15px #999;
-}
-
 #h {
     background-image: url(images/ux.png);
 }
