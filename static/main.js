@@ -1,5 +1,5 @@
-seajs.use(['$', 'buzz', 'keyboard', 'profile/index'],
-    function($, buzz, KeyboardJS, Profile) {
+seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'share'],
+    function($, buzz, KeyboardJS, Profile, Share) {
 
     $(document).ready(function() {
         /**
@@ -142,6 +142,20 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index'],
             $('#duoshuo').fadeOut();
         });
 
+        /**
+         *  分享链接
+         */
+        console.log(Share);
+        new Share({
+            container: '.sidebar',
+            service: ['sina', 'qq', 'douban'],
+            param: {
+                title: '支付宝UED首页看着还不错~ @支付宝',
+                url: 'https://www.alipay.com/',
+                pic: 'https://i.alipayobjects.com/e/201307/jYyoNcdiv.png'
+            },
+            triggerClass: ['.sidebar-weibo', '.sidebar-qq', '.sidebar-douban']
+        })
 
         /*
          *  播放敲打声音

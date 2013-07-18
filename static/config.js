@@ -8,6 +8,7 @@ seajs.config({
         'position': 'arale/position/1.0.1/position',
         'buzz': 'buzz/buzz',
         'keyboard': 'keyboard/keyboard',
-        'store': 'gallery/store/1.3.7/store'
+        'store': 'gallery/store/1.3.7/store',
+        'share': 'alipay/share/0.1.1/share-debug'
     }
 });
