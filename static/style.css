@@ -148,8 +148,6 @@ body {
 }
 .index li {
     float: left;
-    width: 161px;
-    height: 161px;
     margin: 0 60px 0 0;
 }
 .index li:last-child {
@@ -161,32 +159,34 @@ body {
 }
 
 #h {
-    background: url(images/ux.png);
+    background-image: url(images/ux.png);
 }
 
 #j {
-    background: url(images/ue.png);
+    background-image: url(images/ue.png);
 }
 
 #k {
-    background: url(images/ui.png);
+    background-image: url(images/ui.png);
 }
 
 #l {
-    background: url(images/wd.png);
+    background-image: url(images/wd.png);
 }
 
 .index li a {
+    background-position: -1px -1px;
+    width: 159px;
+    height: 159px;
     border-radius: 2px;    
     display: block;
-    background: #ffe6bc;
-    height: 100%;
     text-indent: -9999em;
     overflow: hidden;
     -webkit-transition: all .1s cubic-bezier(.8, 0, 1, .8) 0s;
 	   -moz-transition: all .1s cubic-bezier(.8, 0, 1, .8) 0s;
 		 -o-transition: all .1s cubic-bezier(.8, 0, 1, .8) 0s;
 			transition: all .1s cubic-bezier(.8, 0, 1, .8) 0s;
+    border: 1px solid #e3e3e3;
 }
 .index li a:hover, .index li .action {
     border-radius: 160px;
