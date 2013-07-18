@@ -10,6 +10,6 @@ seajs.config({
         'buzz': 'buzz/buzz',
         'keyboard': 'keyboard/keyboard',
         'store': 'gallery/store/1.3.7/store',
-        'share': 'alipay/share/0.1.2/share-debug'
+        'share': 'alipay/share/0.1.2/share'
     }
 });
