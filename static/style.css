@@ -126,7 +126,7 @@ body {
 }
 /* 每一页样式 */
 .index {
-    padding: 140px 50px 50px;
+    padding: 120px 50px 50px;
     position: relative;
 }
 .index .logo {
@@ -177,6 +177,7 @@ body {
 }
 
 .index li a {
+    border-radius: 2px;    
     display: block;
     background: #ffe6bc;
     height: 100%;
@@ -192,7 +193,7 @@ body {
 }
 .index .keymap {
     width: 256px;
-    margin: 140px auto 0 auto;
+    margin: 100px auto 0 auto;
 }
 .index .keymap span {
     cursor: pointer;
@@ -544,6 +545,20 @@ a.ball-hover {
     overflow: hidden;
     background: url(images/browser.jpg) no-repeat -100px -13px;
     float: left;
+}
+
+.youarehere {
+    width: 30px!important;
+    height: 30px!important;
+    border-radius: 60px!important;
+    background: #FF8823!important;
+    border-color: #FF8823!important;
+    opacity: 0.8!important;
+    z-index: 1000!important;
+}
+
+.youarehere .tooltip {
+    color: #FF8823!important;    
 }
 
 .sidebar {

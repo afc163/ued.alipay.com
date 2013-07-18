@@ -57,18 +57,11 @@ define(function(require, exports, module) {
         youarehereInter = setTimeout(function() {
             var you = new Ball({
                 name: '你在这里',
-                message: '欢迎加入我们！',
-                url: 'http://ued.alipay.com/2010job/'
+                message: '欢迎加入我们!',
+                url: 'http://ued.alipay.com/2010job/',
+                still: true
             });
-            you.element.css({
-                width: '30px',
-                height: '30px',
-                borderRadius: '60px',
-                background: '#FF8823',
-                borderColor: '#FF8823',
-                color: '#FF8823',
-                opacity: 0.8
-            });
+            you.element.addClass('youarehere');
         }, 3000);
     }
 
