@@ -155,7 +155,7 @@ body {
 }
 
 .frame-toggle {
-    box-shadow: 3px 3px 15px #999999;
+    box-shadow: 3px 3px 15px #999;
 }
 
 #h {
@@ -193,7 +193,7 @@ body {
 }
 .index .keymap {
     width: 256px;
-    margin: 100px auto 0 auto;
+    margin: 80px auto 0 auto;
 }
 .index .keymap span {
     cursor: pointer;
@@ -223,9 +223,11 @@ body {
 
 .keymap-description {
     clear: both;
-    color: #999;
-    padding-top: 14px;
-    font-size: 14px;
+    color: #aaa;
+    padding-top: 12px;
+    font-size: 12px;
+    background: url(images/alipay-logo.png) no-repeat 42px 70px;
+    height: 100px;
 }
 
 .page {
@@ -235,7 +237,7 @@ body {
     overflow: hidden;
 }
 .page .header {
-    width: 360px;
+    width: 400px;
     height: 100px;
     position: absolute;
 }
@@ -248,6 +250,7 @@ body {
     font-size: 14px;
     text-align:left;
     line-height: 1.8;
+    width: 350px;
 }
 
 .page .goto {
@@ -259,10 +262,11 @@ body {
     display: block;
     border-radius: 100px 100px;
     position: absolute;
-    font-size: 38px;
+    font-size: 32px;
     color: #fff;
     line-height: 60px;
     z-index: 210;
+    box-shadow: none;
 }
 .page .goto i {
     cursor: pointer;
@@ -280,7 +284,7 @@ body {
     color: #BC6363;
 }
 #frame-top .category-logo {
-    background: url(images/ui-logo.png) no-repeat;
+    background: url(images/vd-logo.png) no-repeat;
 }
 #frame-top .goto {
     bottom: -50px;
@@ -296,7 +300,7 @@ body {
     color: #C59145;
 }
 #frame-bottom .category-logo {
-    background: url(images/ue-logo.png) no-repeat;
+    background: url(images/id-logo.png) no-repeat;
 }
 #frame-bottom .goto {
     top: -50px;
@@ -304,7 +308,7 @@ body {
     margin-left: -50px;
 }
 #frame-bottom .goto i {
-    padding-top: 35px;
+    padding-top: 40px;
 }
 #frame-left .header {
     right: 140px;
@@ -312,7 +316,7 @@ body {
     color: #298848;
 }
 #frame-left .category-logo {
-    background: url(images/ux-logo.png) no-repeat;
+    background: url(images/ur-logo.png) no-repeat;
 }
 #frame-left .goto {
     top: 50%;
@@ -322,10 +326,9 @@ body {
 }
 #frame-left .goto i {
     width: 50px;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 #frame-right .header {
-    width: 330px;
     left: 140px;
     top: 60px;
     color: #3589B0;
@@ -341,7 +344,7 @@ body {
 }
 #frame-right .goto i {
     width: 50px;
-    padding-left: 40px;
+    padding-left: 45px;
 }
 
 /* profile style */
