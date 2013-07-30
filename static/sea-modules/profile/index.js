@@ -8,9 +8,9 @@ define(function(require, exports, module) {
     var youarehereInter
     var BaseColors = {
         wd: '#005A8D',
-        ux: '#007938',
-        ue: '#795520',
-        ui: '#B90000'
+        ur: '#007938',
+        id: '#795520',
+        vd: '#B90000'
     }
 
     exports.initBalls = function(type) {

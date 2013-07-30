@@ -51,7 +51,7 @@ define({
         name: '远尘',
         message: '前端工程师'
     }],
-    'ux': [{
+    'ur': [{
         name: '偏右',
         message: '前端工程狮',
         url: 'http://weibo.com/afc163'
@@ -60,7 +60,7 @@ define({
         message: '前端工程师',
         url: 'http://zhanxin.info'
     }],
-    'ue': [{
+    'id': [{
         name: '偏右',
         message: '前端工程狮',
         url: 'http://weibo.com/afc163'
@@ -69,7 +69,7 @@ define({
         message: '前端工程师',
         url: 'http://zhanxin.info'
     }],
-    'ui': [{
+    'vd': [{
         name: '偏右',
         message: '前端工程狮',
         url: 'http://weibo.com/afc163'
