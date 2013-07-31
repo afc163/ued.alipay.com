@@ -1,10 +1,12 @@
 define({
     'wd': [{
         name: '偏右',
-        message: '前端工程狮'
+        message: '前端工程师',
+        url: 'http://pianyou.me'
     }, {
         name: '展新',
-        message: '前端工程师'
+        message: '前端工程师',
+        url: 'http://www.zhanxin.info'
     }, {
         name: '乔花',
         message: '前端工程师'
@@ -52,30 +54,189 @@ define({
         message: '前端工程师'
     }],
     'ur': [{
-        name: '偏右',
-        message: '前端工程狮',
-        url: 'http://weibo.com/afc163'
+        name: '白龙',
+        message: '用户研究体验员'
     }, {
-        name: '展新',
-        message: '前端工程师',
-        url: 'http://zhanxin.info'
+        name: '传奇',
+        message: '用户研究体验员'
+    }, {
+        name: '龙灿',
+        message: '用户研究体验员'
+    }, {
+        name: '凝夜',
+        message: '用户研究体验员'
+    }, {
+        name: '酥月',
+        message: '用户研究体验员'
+    }, {
+        name: '文锦',
+        message: '用户研究体验员'
+    }, {
+        name: '夏瑾',
+        message: '用户研究体验员'
+    }, {
+        name: '寻飞',
+        message: '用户研究体验员'
+    }, {
+        name: '瑶芝',
+        message: '用户研究体验员'
     }],
     'id': [{
-        name: '偏右',
-        message: '前端工程狮',
-        url: 'http://weibo.com/afc163'
+        name: '北尘',
+        message: '交互设计师'
     }, {
-        name: '展新',
-        message: '前端工程师',
-        url: 'http://zhanxin.info'
+        name: '毕佬',
+        message: '交互设计师'
+    }, {
+        name: '成谦',
+        message: '交互设计师'
+    }, {
+        name: '堤碦',
+        message: '交互设计师'
+    }, {
+        name: '凡鱼',
+        message: '交互设计师'
+    }, {
+        name: '樊素',
+        message: '交互设计师'
+    }, {
+        name: '飞戈',
+        message: '交互设计师'
+    }, {
+        name: '忽客',
+        message: '交互设计师'
+    }, {
+        name: '景乐',
+        message: '交互设计师'
+    }, {
+        name: '浪曦',
+        message: '交互设计师'
+    }, {
+        name: '乐世',
+        message: '交互设计师'
+    }, {
+        name: '南沐',
+        message: '交互设计师'
+    }, {
+        name: '怒风',
+        message: '交互设计师'
+    }, {
+        name: '盼盼',
+        message: '交互设计师'
+    }, {
+        name: '师尹',
+        message: '交互设计师'
+    }, {
+        name: '岁三',
+        message: '交互设计师'
+    }, {
+        name: '亦典',
+        message: '交互设计师'
+    }, {
+        name: '驭凡',
+        message: '交互设计师'
+    }, {
+        name: '朱耷',
+        message: '交互设计师'
+    }, {
+        name: '祝英台',
+        message: '交互设计师'
+    }, {
+        name: '卓兰',
+        message: '交互设计师'
     }],
     'vd': [{
-        name: '偏右',
-        message: '前端工程狮',
-        url: 'http://weibo.com/afc163'
+        name: '白妞',
+        message: '视觉设计师'
     }, {
-        name: '展新',
-        message: '前端工程师',
-        url: 'http://zhanxin.info'
+        name: '曹司朋',
+        message: '视觉设计师'
+    }, {
+        name: '澈儿',
+        message: '视觉设计师'
+    }, {
+        name: '待梦',
+        message: '视觉设计师'
+    }, {
+        name: '道石',
+        message: '视觉设计师'
+    }, {
+        name: '凡果',
+        message: '视觉设计师'
+    }, {
+        name: '涵龙',
+        message: '视觉设计师'
+    }, {
+        name: '韩择木',
+        message: '视觉设计师'
+    }, {
+        name: '和靖',
+        message: '视觉设计师'
+    }, {
+        name: '红孩儿',
+        message: '视觉设计师'
+    }, {
+        name: '花鸣',
+        message: '视觉设计师'
+    }, {
+        name: '雷利',
+        message: '视觉设计师'
+    }, {
+        name: '狸花',
+        message: '视觉设计师'
+    }, {
+        name: '灵三',
+        message: '视觉设计师'
+    }, {
+        name: '凌雪',
+        message: '视觉设计师'
+    }, {
+        name: '罗宪',
+        message: '视觉设计师'
+    }, {
+        name: '马丁',
+        message: '视觉设计师'
+    }, {
+        name: '麦希',
+        message: '视觉设计师'
+    }, {
+        name: '梅娜',
+        message: '视觉设计师'
+    }, {
+        name: '荣光',
+        message: '视觉设计师'
+    }, {
+        name: '阮瑀',
+        message: '视觉设计师'
+    }, {
+        name: '它山',
+        message: '视觉设计师'
+    }, {
+        name: '陶潜',
+        message: '视觉设计师'
+    }, {
+        name: '瓦而',
+        message: '视觉设计师'
+    }, {
+        name: '小怒',
+        message: '视觉设计师'
+    }, {
+        name: '筱本',
+        message: '视觉设计师'
+    }, {
+        name: '音书',
+        message: '视觉设计师'
+    }, {
+        name: '愉儿',
+        message: '视觉设计师'
+    }, {
+        name: '战楼兰',
+        message: '视觉设计师'
+    }, {
+        name: '芷依',
+        message: '视觉设计师'
+    }, {
+        name: '志道',
+        message: '视觉设计师'
     }]
 });
