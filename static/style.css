@@ -206,7 +206,7 @@ body {
     padding-bottom: 4px;
     margin: 0 10px;
     border: 1px solid #bbb;
-    border-radius: 4px 4px;
+    border-radius: 4px;
     text-align: center;
     vertical-align: middle;
     color: #999;
@@ -215,10 +215,34 @@ body {
 }
 
 .index .keymap span.keypressed {
-    box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset;
+    box-shadow: none;
     padding-bottom: 1px;
     position: relative;
     top: 3px;
+}
+
+.keymap span.keymap-ur {
+    border-color: #7BB193;
+    color: #7BB193;
+    box-shadow: 0 -4px 0 0 rgba(12, 96, 5, 0.17) inset;
+}
+
+.keymap span.keymap-id {
+    border-color: #BBB09F;
+    color: #BBB09F;
+    box-shadow: 0 -4px 0 0 rgba(96, 41, 5, 0.17) inset;
+}
+
+.keymap span.keymap-vd {
+    border-color: #D38585;
+    color: #D38585;
+    box-shadow: 0 -4px 0 0 rgba(152, 85, 85, 0.24) inset;
+}
+
+.keymap span.keymap-wd {
+    border-color: #90B1C2;
+    color: #90B1C2;
+    box-shadow: 0 -4px 0 0 rgba(5, 34, 96, 0.17) inset;
 }
 
 .keymap-description {
