@@ -75,6 +75,10 @@ define({
     }, {
         name: '丹侠',
         message: '前端工程师'
+    }, {
+        name: '贯高',
+        message: '前端工程师',
+        url: 'http://chuo.me/'
     }],
     'ur': [{
         name: '白龙',
