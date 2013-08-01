@@ -5,6 +5,7 @@ define(function(require, exports, module) {
     var Position = require('position')
     require('easing')
     var popTpl = $('#pop-template').html()
+    var pop
 
     function ball(config) {
         config = config || {}
@@ -99,30 +100,25 @@ define(function(require, exports, module) {
     }
 
     ball.prototype.showPop = function() {
-        if (this.pop) {
-            this.pop.remove()
-        }
         this.element.addClass('ball-hover')
         this.stop()
         
         var html = Handlebars.compile(popTpl)(this.config)
-        this.pop = $(html).appendTo(this.element)
+        pop = $(html).appendTo(this.element)
 
-        Position.pin(this.pop, {
+        Position.pin(pop, {
             element: this.element,
             x: '50%',
             y: '50%'
         })
+            
     }
 
     ball.prototype.hidePop= function() {
         var that = this
         this.element.removeClass('ball-hover')
-        var pop = this.pop
-        this.pop.fadeOut(500, function() {
-            pop.remove()
-        })
-        this.start()        
+        pop.hide()
+        this.start()
     }
 
     module.exports = ball
