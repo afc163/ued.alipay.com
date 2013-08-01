@@ -88,6 +88,9 @@ define({
     }, {
         name: '伯约',
         message: '前端工程师'
+    }, {
+        name: '冒顿',
+        message: '前端工程师'
     }],
     'ur': [{
         name: '白龙',
