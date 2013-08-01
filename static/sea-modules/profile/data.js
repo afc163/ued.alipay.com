@@ -52,6 +52,29 @@ define({
     }, {
         name: '远尘',
         message: '前端工程师'
+    }, {
+        name: '元则',
+        message: '前端工程师',
+        url: 'http://weibo.com/highcapital'
+    }, {
+        name: '子推',
+        message: '前端工程师',
+        url: 'http://blog.hsinglin.com'
+    }, {
+        name: '响当当',
+        message: '前端工程师',
+        url: 'http://weibo.com/u/1642615584'
+    }, {
+        name: '琼羽',
+        message: '前端工程师',
+        url: 'http://sosilence.info/'
+    }, {
+        name: '民淳',
+        message: '前端工程师',
+        url: 'http://blog.liminglu.cn'
+    }, {
+        name: '丹侠',
+        message: '前端工程师'
     }],
     'ur': [{
         name: '白龙',
