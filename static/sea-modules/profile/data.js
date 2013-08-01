@@ -79,6 +79,12 @@ define({
         name: '贯高',
         message: '前端工程师',
         url: 'http://chuo.me/'
+    }, {
+        name: '右丞',
+        message: '前端工程师'
+    }, {
+        name: '云际',
+        message: '前端工程师'
     }],
     'ur': [{
         name: '白龙',
