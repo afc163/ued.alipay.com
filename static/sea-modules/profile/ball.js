@@ -34,7 +34,7 @@ define(function(require, exports, module) {
         }
         
         var html = this.url ? '<a target="_blank" title="'+title+'" href="'+this.url+'" class="ball"></a>'
-                            : '<a target="_blank" href="#" class="ball"></a>';
+                            : '<a href="#" class="ball"></a>';
         this.element = $(html).appendTo(this.parentNode)
 
         this.element.css('background', this.color);
