@@ -98,6 +98,9 @@ define({
     }, {
         name: '玉郎',
         message: '我不是周杰伦'
+    }, {
+        name: '默哈',
+        message: ''
     }],
     'ur': [{
         name: '白龙',
