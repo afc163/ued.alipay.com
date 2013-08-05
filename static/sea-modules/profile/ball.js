@@ -103,10 +103,14 @@ define(function(require, exports, module) {
         this.element.addClass('ball-hover')
         this.stop()
         
-        var html = Handlebars.compile(popTpl)(this.config)
-        pop = $(html).appendTo(this.element)
+        if (this.pop) {
+            this.pop.show()
+        } else {
+            var html = Handlebars.compile(popTpl)(this.config)
+            this.pop = $(html).appendTo(this.element)
+        }
 
-        Position.pin(pop, {
+        Position.pin(this.pop, {
             element: this.element,
             x: '50%',
             y: '50%'
@@ -117,7 +121,7 @@ define(function(require, exports, module) {
     ball.prototype.hidePop= function() {
         var that = this
         this.element.removeClass('ball-hover')
-        pop.hide()
+        this.pop.hide()
         this.start()
     }
 
