@@ -36,7 +36,7 @@ define({
         message: '面朝大海，春暖花开。'
     }, {
         name: '沉鱼',
-        message: '前端工程师'
+        message: '保持简单'
     }, {
         name: '玉伯',
         message: '用开放的心态，打造专业的人生。'
@@ -277,7 +277,7 @@ define({
         message: '视觉设计师'
     }, {
         name: '愉儿',
-        message: '视觉设计师'
+        message: '無遠弗屆'
     }, {
         name: '战楼兰',
         message: '视觉设计师'
