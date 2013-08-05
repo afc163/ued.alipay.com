@@ -28,15 +28,14 @@ define(function(require, exports, module) {
 
         var randomShow = function() {
             randomShowInter = setTimeout(function() {
-                if ($('.tooltip').length === 0) {
-                    var b = balls[random(0, balls.length-1)]
-                    b.showPop()
-                    setTimeout(function() {
-                        b.hidePop()
-                    }, 2500)
-                }
+                var b = balls[random(0, balls.length-1)]
+                b.showPop()
+                setTimeout(function() {
+                    b.hidePop()
+                }, 3000)
+
                 randomShow()
-            }, random(4000, 10000))
+            }, random(3600, 10000))
         }
 
         randomShow()

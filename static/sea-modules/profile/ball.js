@@ -49,7 +49,7 @@ define(function(require, exports, module) {
         })
 
         // 随机大小
-        var r = random(25, 150)
+        var r = random(25, 120)
         this.element.css({
             width: r,
             height: r,
@@ -64,11 +64,11 @@ define(function(require, exports, module) {
     }
 
     ball.prototype.move = function(callback) {
-        var duration = random(12000, 50000)
+        var duration = random(12000, 60000)
 
         this.element.animate({
-            top: '+=' + limit(this.element.css('top'), random(-200, 200), $(window).height()),
-            left: '+=' + limit(this.element.css('left'), random(-200, 200), $(window).width())
+            top: '+=' + limit(this.element.css('top'), random(-150, 150), $(window).height()),
+            left: '+=' + limit(this.element.css('left'), random(-150, 150), $(window).width())
         }, {
             duration: duration,
             easing: 'easeOut',
