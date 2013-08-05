@@ -91,6 +91,13 @@ define({
     }, {
         name: '冒顿',
         message: '前端工程师'
+    }, {
+        name: '蔡伦',
+        message: '前端工程师',
+        url: 'http://peaches.io'
+    }, {
+        name: '玉郎',
+        message: '我不是周杰伦'
     }],
     'ur': [{
         name: '白龙',
