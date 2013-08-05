@@ -48,7 +48,7 @@ define({
         message: '前端工程师'
     }, {
         name: '竹卢',
-        message: '前端工程师'
+        message: 'Love and conquer WD...'
     }, {
         name: '莫登',
         message: '前端工程师'
