@@ -554,13 +554,16 @@ a.ball-hover {
     border: 1px solid #87d2fa;
 }
 .icon-firefox {
-    background-position: -15px -6px;
+    background-position: -15px -4px;
 }
 .icon-chrome {
-    background-position: -174px -6px;
+    background-position: -175px -4px;
 }
 .icon-safari {
-    background-position: -252px -6px;
+    background-position: -252px -5px;
+}
+.icon-ie10 {
+    background-position: -96px -5px;
 }
 .icon-ie {
     margin-right: 20px;
