@@ -248,9 +248,9 @@ body {
 .keymap-description {
     clear: both;
     color: #aaa;
-    padding-top: 12px;
+    padding-top: 10px;
     font-size: 12px;
-    background: url(images/alipay-logo.png) no-repeat 42px 70px;
+    background: url(images/alipay-logo.png) no-repeat 42px 60px;
     height: 100px;
 }
 
