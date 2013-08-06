@@ -39,7 +39,7 @@ define({
         message: '保持简单'
     }, {
         name: '玉伯',
-        message: '用开放的心态，打造专业的人生。'
+        message: '海纳百川'
     }, {
         name: '南伯',
         message: 'love its people, but never trust its government'
