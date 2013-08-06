@@ -170,10 +170,12 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'share'],
         /*
          *  静音
          */
-        $('.sidebar-quiet').toggle(function() {
-            $(this).addClass('quiet');
-        }, function() {
-            $(this).removeClass('quiet');            
+        $('.sidebar-quiet').click(function() {
+            if ($(this).hasClass('quiet')) {
+                $(this).removeClass('quiet');
+            } else {
+                $(this).addClass('quiet');
+            }
         });
 
         /*

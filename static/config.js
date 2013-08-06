@@ -1,7 +1,7 @@
 seajs.config({
     alias: {
-        '$': 'jquery/jquery/1.7.2/jquery',
-        '$-debug': 'jquery/jquery/1.7.2/jquery-debug',
+        '$': 'jquery/jquery/1.10.1/jquery',
+        '$-debug': 'jquery/jquery/1.10.1/jquery-debug',
         'easing': 'arale/easing/1.0.0/easing',
         'transit': 'jquery/transit/0.9.9/transit',
         'handlebars': 'gallery/handlebars/1.0.2/handlebars',

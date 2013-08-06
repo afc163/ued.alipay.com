@@ -67,8 +67,8 @@ define(function(require, exports, module) {
         var duration = random(12000, 60000)
 
         this.element.animate({
-            top: '+=' + limit(this.element.css('top'), random(-150, 150), $(window).height()),
-            left: '+=' + limit(this.element.css('left'), random(-150, 150), $(window).width())
+            top: '+=' + limit(this.element.css('top'), random(-200, 200), $(window).height()),
+            left: '+=' + limit(this.element.css('left'), random(-200, 200), $(window).width())
         }, {
             duration: duration,
             easing: 'easeOut',
