@@ -45,15 +45,8 @@ define(function(require, exports, module) {
         // preload head image
         $.each(['wd','id','vd','ur'], function(i, item) {
             for (var i=0; i<data[item].length; i++) {
-                console.log(data[item][i].name);
-                console.log(encodeURIComponent(data[item][i].name));
-                console.log(decodeURIComponent(data[item][i].name));
-                new Image().src = '/static/images/head/' + 
-                    data[item][i].name + '.png';
                 new Image().src = '/static/images/head/' + 
                     encodeURIComponent(data[item][i].name) + '.png';
-                new Image().src = '/static/images/head/' + 
-                    decodeURIComponent(data[item][i].name) + '.png';
             }
         })
     }
