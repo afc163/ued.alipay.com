@@ -13,12 +13,6 @@ define(function(require, exports, module) {
         vd: '#B90000'
     }
 
-    $.each(['wd','id','vd','ur'], function(i, item) {
-        for (var i=0; i<data[item].length; i++) {
-            new Image().src = '/static/images/head/' + data[item][i].name + '.png';
-        }
-    })
-
     exports.initBalls = function(type) {
         var balls = []
         for (var i=0; i<data[type].length; i++) {
@@ -45,6 +39,15 @@ define(function(require, exports, module) {
         }
 
         randomShow()
+    }
+
+    exports.preloadHead = function() {
+        // preload head image
+        $.each(['wd','id','vd','ur'], function(i, item) {
+            for (var i=0; i<data[item].length; i++) {
+                new Image().src = '/static/images/head/' + data[item][i].name + '.png';
+            }
+        })
     }
 
     exports.clearBalls = function() {

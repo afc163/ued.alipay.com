@@ -153,6 +153,7 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'share'],
             $('#duoshuo').fadeOut();
         });
 
+
         /**
          *  分享链接
          */
@@ -177,6 +178,8 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'share'],
                 $(this).addClass('quiet');
             }
         });
+
+        Profile.preloadHead();
 
         /*
          *  播放敲打声音
