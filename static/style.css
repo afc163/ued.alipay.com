@@ -460,7 +460,7 @@ a.ball-hover {
 
 #duoshuo {
     position: absolute;
-    top: 220px;
+    top: 180px;
     left: 50%;
     margin-left: -480px;
     width: 900px;
@@ -472,6 +472,7 @@ a.ball-hover {
     border-radius: 10px 10px;
     border: 10px solid #d4d9dc;
 }
+
 #duoshuo #close-duoshuo {
     font-size: 14px;
     color: #666;
