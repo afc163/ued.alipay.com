@@ -13,6 +13,9 @@ define({
     }, {
         name: '余化',
         message: '请问你的音乐梦想是什么'
+    },{
+        name: '么么茶',
+        message: '前端车间主任'
     }, {
         name: '倚松',
         message: 'click the world'
