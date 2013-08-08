@@ -177,8 +177,12 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'share'],
             }
         });
 
-        // preload mp3 file
-
+        // preload file
+        bassSound();
+        hatSound();
+        snareSound();
+        tomSound();
+        Profile.preloadHead();
 
         /*
          *  播放敲打声音
