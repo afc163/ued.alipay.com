@@ -45,7 +45,7 @@ define({
         message: '海纳百川'
     }, {
         name: '南伯',
-        message: 'love its people, but never trust its government'
+        message: 'Love its people, but never trust its government'
     }, {
         name: '禾几',
         message: '前端工程师'
@@ -87,7 +87,7 @@ define({
         url: 'http://chuo.me/'
     }, {
         name: '右丞',
-        message: '爱前端，爱设计，爱产品。'
+        message: '爱前端，爱设计，爱产品'
     }, {
         name: '云际',
         message: '前端工程师'
@@ -106,14 +106,14 @@ define({
         message: '我不是周杰伦'
     }, {
         name: '默哈',
-        message: ''
+        message: '前端工程师'
     }],
     'ur': [{
         name: '白龙',
         message: '用户研究体验员'
     }, {
-        name: '传奇',
-        message: '用户研究体验员'
+        name: '甄宓',
+        message: '阿里巴巴第⼀一个用户研究员'
     }, {
         name: '龙灿',
         message: '用户研究体验员'
@@ -158,6 +158,12 @@ define({
         name: '飞戈',
         message: '交互设计师'
     }, {
+        name: '山河水',
+        message: '交互设计师'
+    }, {
+        name: '蓬莱大仙',
+        message: '交互设计师'
+    }, {
         name: '景乐',
         message: '交互设计师'
     }, {
@@ -171,9 +177,6 @@ define({
         message: '交互设计师'
     }, {
         name: '怒风',
-        message: '交互设计师'
-    }, {
-        name: '盼盼',
         message: '交互设计师'
     }, {
         name: '师尹',
@@ -198,6 +201,18 @@ define({
         message: '交互设计师'
     }],
     'vd': [{
+        name: '琉璃',
+        message: '文案设计师'
+    },{
+        name: '乐斯',
+        message: '文案inside'
+    },{
+        name: '青罗',
+        message: '用心 用心 用心'
+    },{
+        name: '赭隐',
+        message: '好设计是等出来的...!'
+    }, {
         name: '白妞',
         message: '不忘初心,敬畏长存'
     }, {
@@ -220,9 +235,6 @@ define({
         message: '仁义礼智信,定静安虑得'
     }, {
         name: '韩择木',
-        message: '视觉设计师'
-    }, {
-        name: '和靖',
         message: '视觉设计师'
     }, {
         name: '红孩儿',

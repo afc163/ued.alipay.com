@@ -382,7 +382,8 @@ a.ball {
     font-size: 16px;
     border: 3px solid transparent;
     opacity: 0;
-    transition: opacity 1s ease-out, background-color 0.5s ease-out;
+    transition: opacity 1.5s ease-out, background-color 0.5s ease-out;
+    -webkit-transition: opacity 1.5s ease-out, background-color 0.5s ease-out;
 }
 
 a.ball .tooltip {
@@ -404,11 +405,11 @@ a.ball-hover {
     -webkit-animation: scale 0.25s ease-out;
     animation: scale 0.25s ease-out;
     color: #555;
-    padding: 10px 12px;
+    padding: 8px 10px;
     border-radius: 2px;
     background: #fff;
     border: 1px solid #ccc;
-    min-width: 170px;
+    min-width: 178px;
 }
 .tooltip.in {
     opacity: 1;

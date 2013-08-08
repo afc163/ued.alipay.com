@@ -21,7 +21,7 @@ define(function(require, exports, module) {
                 var inter = setTimeout(function() {
                     var ball = new Ball(config)
                     balls.push(ball)
-                }, random(500, 3000))
+                }, random(500, 6000))
                 initShowInters.push(inter)
             })(data[type][i])
         }
