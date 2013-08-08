@@ -7,6 +7,10 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'share'],
         console.log("%c邮件请注明来自 ued-console", "font-size:12px;color:#888;");
     }
 
+    if (!buzz.isSupported()) {
+        console.log("Your browser is too old, time to update!");
+    }
+
     var isQuiet = false;
 
     $(document).ready(function() {
@@ -16,22 +20,22 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'share'],
         var bassSound = function() {
             return new buzz.sound( "static/media/数码", {
                 formats: [ "ogg", "mp3"]
-            });
+            }).load();
         },
         hatSound = function() {
             return new buzz.sound( "static/media/鼠标", {
                 formats: [ "ogg", "mp3"]
-            });
+            }).load();
         },
         snareSound = function() {
             return new buzz.sound( "static/media/书写", {
                 formats: [ "ogg", "mp3"]
-            });
+            }).load();
         },
         tomSound = function() {
             return new buzz.sound( "static/media/打字", {
                 formats: [ "ogg", "mp3"]
-            });
+            }).load();
         };
  
         /**
@@ -156,7 +160,7 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'share'],
             service: ['sina', 'qq', 'douban'],
             param: {
                 title: '支付宝UED首页看着还不错~ @支付宝',
-                url: 'https://www.alipay.com/',
+                url: 'http://ued.alipay.com/',
                 pic: 'https://i.alipayobjects.com/e/201307/jYyoNcdiv.png'
             },
             triggerClass: ['.sidebar-weibo', '.sidebar-qq', '.sidebar-douban']
@@ -174,11 +178,7 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'share'],
         });
 
         // preload mp3 file
-        bassSound();
-        hatSound();
-        snareSound();
-        tomSound();
-        Profile.preloadHead();
+
 
         /*
          *  播放敲打声音
