@@ -3,7 +3,7 @@ seajs.use(['$', 'buzz', 'keyboard', 'profile/index', 'share'],
 
     if (window.console) {
         console.log("%c         ", "font-size:32px;background:url('https://i.alipayobjects.com/e/201308/p6Qt3j3yH.png') no-repeat;");
-        console.log("%c想加入杭州市西湖区万塘路上最好的 UED 团队吗？\n一起奏响互联网金融产品的美妙乐章！\nUED 相关简历请投 <uedzp@alipay.com> \n前端工程师请投 <mmtea.wuzh@alipay.com>", "color: #08c; font-size: 14px;");
+        console.log("%c想加入杭州市西湖区万塘路上最好的 UED 团队吗？\n一起奏响互联网金融产品的美妙乐章！ \n前端工程师请投 <mmtea.wuzh@alipay.com>", "color: #08c; font-size: 14px;");
         console.log("%c邮件请注明来自 ued-console", "font-size:12px;color:#888;");
     }
 
